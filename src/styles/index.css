@@ -1,13 +1,153 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Courier New',
     monospace;
+}
+
+.tk-blob {
+  animation: blob-turn var(--time, 30s) linear infinite;
+  fill: var(--fill, #7600f8);
+  position: relative;
+  transform-origin: center;
+  max-width: 10vw;
+}
+
+.tk-blob svg {
+  animation: blob-skew calc(var(--time, 30s) * 0.5) linear 0s infinite;
+  transform-origin: center;
+}
+
+.tk-blob svg path {
+  animation: blob-scale calc(var(--time, 30s) * 0.5) ease-in-out 0s infinite;
+  transform-origin: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes blob-turn {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes blob-skew {
+  0% {
+    transform: skewY(0deg);
+  }
+
+  13% {
+    transform: skewY(calc((1.8deg) * var(--amount, 2)));
+  }
+
+  18% {
+    transform: skewY(calc((2.2deg) * var(--amount, 2)));
+  }
+
+  24% {
+    transform: skewY(calc((2.48deg) * var(--amount, 2)));
+  }
+
+  25% {
+    transform: skewY(calc((2.5deg) * var(--amount, 2)));
+  }
+
+  26% {
+    transform: skewY(calc((2.48deg) * var(--amount, 2)));
+  }
+
+  32% {
+    transform: skewY(calc((2.2deg) * var(--amount, 2)));
+  }
+
+  37% {
+    transform: skewY(calc((1.8deg) * var(--amount, 2)));
+  }
+
+  50% {
+    transform: skewY(0deg);
+  }
+
+  63% {
+    transform: skewY(calc((-1.8deg) * var(--amount, 2)));
+  }
+
+  68% {
+    transform: skewY(calc((-2.2deg) * var(--amount, 2)));
+  }
+
+  74% {
+    transform: skewY(calc((-2.48deg) * var(--amount, 2)));
+  }
+
+  75% {
+    transform: skewY(calc((-2.5deg) * var(--amount, 2)));
+  }
+
+  76% {
+    transform: skewY(calc((-2.48deg) * var(--amount, 2)));
+  }
+
+  82% {
+    transform: skewY(calc((-2.2deg) * var(--amount, 2)));
+  }
+
+  87% {
+    transform: skewY(calc((-1.8deg) * var(--amount, 2)));
+  }
+
+  100% {
+    transform: skewY(0deg);
+  }
+}
+
+@keyframes blob-scale {
+  0% {
+    transform: scaleX(0.9) scaleY(1);
+  }
+
+  25% {
+    transform: scaleX(0.9) scaleY(0.9);
+  }
+
+  50% {
+    transform: scaleX(1) scaleY(0.9);
+  }
+
+  75% {
+    transform: scaleX(0.9) scaleY(0.9);
+  }
+
+  100% {
+    transform: scaleX(0.9) scaleY(1);
+  }
 }

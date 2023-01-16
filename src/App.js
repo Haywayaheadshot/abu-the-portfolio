@@ -1,10 +1,13 @@
+// import Blobs from './components/dep/Blobs';
+import NavBar from './components/NavBar';
 import './styles/App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <header>
-        <h1>My Porfolio</h1>
+        {/* <Blobs /> */}
+        <NavBar />
       </header>
     </div>
   );
