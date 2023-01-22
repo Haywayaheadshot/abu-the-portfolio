@@ -6,7 +6,7 @@
   padding: 2vh 4vw;
   border-bottom: 1px solid #000;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.592);
-  background: linear-gradient(98deg, rgb(154,89,1) 80%, rgb(106,60,2) 20%);
+  background: linear-gradient(98deg, rgb(154, 89, 1) 80%, rgb(106, 60, 2) 20%);
 }
 
 .logo {
@@ -25,7 +25,7 @@
 
 .hamburger-ul {
   position: fixed;
-  background-color: rgb(43,33,30);
+  background-color: rgb(43, 33, 30);
   height: 100%;
   padding: 5vh 10vw;
   right: 0;

@@ -1,10 +1,10 @@
 .home-container {
-    background: linear-gradient(-14deg, rgb(20,20,20) 70%, rgb(80,52,38) 20%);
-    height: 100vh;
+  background: linear-gradient(-14deg, rgb(20, 20, 20) 70%, rgb(80, 52, 38) 20%);
+  height: 100vh;
 }
 
 .home-container h1 {
-    color: #fff;
-    margin-top: 0;
-    text-align: center;
+  color: #fff;
+  margin-top: 0;
+  text-align: center;
 }
