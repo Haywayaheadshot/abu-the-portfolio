@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import { Squeeze as Hamburger } from 'hamburger-react';
 import '../styles/nav-bar.css';
+import { NavLink } from 'react-router-dom';
 
 function NavBar() {
   const [open, setClose] = useState(false);
   return (
     <div className="nav-container">
-      <h1 className="logo">Abubakar Ummar</h1>
+      <NavLink to="/" onClick={() => setClose(false)}>
+        <h1 className="logo cartoonish-font">Abubakar Ummar</h1>
+      </NavLink>
       <section className="for-phone">
         <Hamburger
           direction="right"
@@ -19,9 +22,15 @@ function NavBar() {
         />
         { open ? (
           <ul className="hamburger-ul">
-            <li className="hamburger-ul-li">About</li>
-            <li className="hamburger-ul-li">Contact</li>
-            <li className="hamburger-ul-li">Projects</li>
+            <NavLink to="/about" onClick={() => setClose(false)}>
+              <li className="hamburger-ul-li">About</li>
+            </NavLink>
+            <NavLink to="/contact" onClick={() => setClose(false)}>
+              <li className="hamburger-ul-li">Contact</li>
+            </NavLink>
+            <NavLink to="/projects" onClick={() => setClose(false)}>
+              <li className="hamburger-ul-li">Projects</li>
+            </NavLink>
           </ul>
         ) : null }
       </section>

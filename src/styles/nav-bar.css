@@ -6,13 +6,16 @@
   padding: 2vh 4vw;
   border-bottom: 1px solid #000;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.592);
+  background: linear-gradient(98deg, rgb(154, 89, 1) 80%, rgb(106, 60, 2) 20%);
 }
 
 .logo {
-  background-color: grey;
+  /* background-color: rgb(20,20,20); */
+  color: hsl(0, 0%, 100%);
   padding: 5px 10px;
-  font-size: 1.2em;
+  font-size: 2em;
   border-radius: 5px;
+  font-weight: 900;
   cursor: pointer;
 }
 
@@ -22,19 +25,21 @@
 
 .hamburger-ul {
   position: fixed;
-  background-color: red;
-  min-height: 20vh;
+  background-color: rgb(43, 33, 30);
+  height: 100%;
   padding: 5vh 10vw;
-  left: 50vw;
+  right: 0;
   display: flex;
   gap: 20px;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  border-top-left-radius: 20px;
 }
 
 .hamburger-ul-li {
   font-size: 1.2rem;
+  color: hsl(0, 0%, 100%);
 }
 
 .for-desk {
