@@ -6,6 +6,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import './styles/App.css';
+import Footer from './pages/Footer';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
             <Route exact path="/projects" element={<Projects />} />
           </Routes>
         </main>
+        <footer>
+          <Footer />
+        </footer>
       </div>
     </Router>
   );
