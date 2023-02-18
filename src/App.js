@@ -11,7 +11,7 @@ import Footer from './pages/Footer';
 function App() {
   return (
     <Router>
-      <div>
+      <div id="App" className="App">
         <header>
           {/* <Blobs /> */}
           <NavBar />
