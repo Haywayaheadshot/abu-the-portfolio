@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 function NavBar() {
   const [open, setClose] = useState(false);
+
   return (
     <div className="nav-container">
       <NavLink to="/" onClick={() => setClose(false)}>
@@ -14,8 +15,8 @@ function NavBar() {
         <Hamburger
           direction="right"
           easing="ease-in"
-          toggled={open}
-          toggle={setClose}
+          toggled={(open)}
+          toggle={(setClose)}
           label="Show menu"
           distance="lg"
           size={44}

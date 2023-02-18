@@ -41,7 +41,7 @@ code {
   fill: var(--fill, #7600f8);
   position: relative;
   transform-origin: center;
-  max-width: 10vw;
+  max-width: 50vw;
 }
 
 .tk-blob svg {
@@ -160,4 +160,8 @@ ul {
   100% {
     transform: scaleX(0.9) scaleY(1);
   }
+}
+
+.overflow {
+  overflow-y: hidden;
 }
