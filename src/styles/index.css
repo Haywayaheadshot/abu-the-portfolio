@@ -39,14 +39,23 @@ code {
 .tk-blob {
   animation: blob-turn var(--time, 30s) linear infinite;
   fill: var(--fill, #7600f8);
-  position: relative;
   transform-origin: center;
   max-width: 50vw;
 }
 
-.tk-blob svg {
+.tk-blob-svg {
+  position: absolute;
+  place-self: center;
   animation: blob-skew calc(var(--time, 30s) * 0.5) linear 0s infinite;
   transform-origin: center;
+  background-color: var(--fill, #7600f8);
+  max-width: 30vw;
+  min-height: 50vw;
+  border-top-right-radius: 250px;
+  border-bottom-left-radius: 250px;
+  border-top-left-radius: 400px;
+  border-bottom-right-radius: 200px;
+  opacity: 0.6;
 }
 
 .tk-blob svg path {
@@ -104,7 +113,7 @@ ul {
   }
 
   50% {
-    transform: skewY(0deg);
+    transform: skewY(20deg);
   }
 
   63% {
@@ -133,6 +142,10 @@ ul {
 
   87% {
     transform: skewY(calc((-1.8deg) * var(--amount, 2)));
+  }
+
+  95% {
+    transform: skewY(-0.8deg);
   }
 
   100% {
