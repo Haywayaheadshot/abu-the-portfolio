@@ -34,7 +34,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   animation: profile_animate 8s ease-in-out 1s infinite;
-  border: 2px solid rgb(80,52,38);
+  border: 2px solid rgb(80, 52, 38);
 }
 
 .abu-image-pop {
@@ -45,20 +45,21 @@
   background-repeat: no-repeat;
   background-size: cover;
   animation: profile_animate 8s ease-in-out 1s infinite;
-  border: 2px solid rgb(80,52,38);
+  border: 2px solid rgb(80, 52, 38);
 }
 
 @keyframes profile_animate {
   0% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-}
+  }
 
-50% {
+  50% {
     border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-}
-100% {
+  }
+
+  100% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-}
+  }
 }
 
 .landing-page-header {
@@ -74,28 +75,28 @@
   max-width: 30px;
 }
 
-
 .landing-page-name {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  letter-spacing: 0.15em; /* Adjust as needed */
   font-size: 1rem;
-  animation: 
+  animation:
     typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+    blink-caret 0.75s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from { width: 0; }
+  to { width: 100%; }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
+  from,
+  to { border-color: transparent; }
   50% { border-color: orange; }
 }
 
