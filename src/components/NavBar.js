@@ -9,10 +9,13 @@ function NavBar() {
   const toggleMenu = () => {
     setOpen(!open);
     const body = document.getElementById('body');
+    const popBg = document.querySelector('.hamburger-pop-bg');
     if (!open) {
       body.classList.add('open');
+      popBg.style.display = 'block';
     } else {
       body.classList.remove('open');
+      popBg.style.display = 'none';
     }
   };
 
