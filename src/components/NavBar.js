@@ -4,36 +4,46 @@ import '../styles/nav-bar.css';
 import { NavLink } from 'react-router-dom';
 
 function NavBar() {
-  const [open, setClose] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setOpen(!open);
+    const body = document.getElementById('body');
+    if (!open) {
+      body.classList.add('open');
+    } else {
+      body.classList.remove('open');
+    }
+  };
 
   return (
     <div className="nav-container">
-      <NavLink to="/" onClick={() => setClose(false)}>
+      <NavLink to="/" onClick={() => toggleMenu(false)}>
         <h1 className="logo cartoonish-font">Abubakar Ummar</h1>
       </NavLink>
       <section className="for-phone">
         <Hamburger
           direction="right"
           easing="ease-in"
-          toggled={(open)}
-          toggle={(setClose)}
+          toggled={open}
+          toggle={toggleMenu}
           label="Show menu"
           distance="lg"
           size={44}
         />
-        { open ? (
+        {open ? (
           <ul className="hamburger-ul">
-            <NavLink to="/about" onClick={() => setClose(false)}>
+            <NavLink to="/about" onClick={() => toggleMenu(false)}>
               <li className="hamburger-ul-li">About</li>
             </NavLink>
-            <NavLink to="/contact" onClick={() => setClose(false)}>
+            <NavLink to="/contact" onClick={() => toggleMenu(false)}>
               <li className="hamburger-ul-li">Contact</li>
             </NavLink>
-            <NavLink to="/projects" onClick={() => setClose(false)}>
+            <NavLink to="/projects" onClick={() => toggleMenu(false)}>
               <li className="hamburger-ul-li">Projects</li>
             </NavLink>
           </ul>
-        ) : null }
+        ) : null}
       </section>
       <section className="for-desk">
         <ul className="desk-ul">

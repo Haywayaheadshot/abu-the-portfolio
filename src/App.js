@@ -1,4 +1,3 @@
-// import Blobs from './components/dep/Blobs';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Home from './pages/Home';
@@ -11,9 +10,8 @@ import Footer from './pages/Footer';
 function App() {
   return (
     <Router>
-      <div id="App" className="App">
+      <div className="App">
         <header>
-          {/* <Blobs /> */}
           <NavBar />
         </header>
         <main>
