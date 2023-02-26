@@ -10,12 +10,15 @@ function NavBar() {
     setOpen(!open);
     const body = document.getElementById('body');
     const popBg = document.querySelector('.hamburger-pop-bg');
+    const footerAnime = document.querySelector('.bar-ball-container');
     if (!open) {
       body.classList.add('open');
       popBg.style.display = 'block';
+      footerAnime.style.display = 'none';
     } else {
       body.classList.remove('open');
       popBg.style.display = 'none';
+      footerAnime.style.display = 'flex';
     }
   };
 

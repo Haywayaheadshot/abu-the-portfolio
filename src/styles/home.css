@@ -1,6 +1,6 @@
 .home-container {
   background: linear-gradient(-14deg, rgb(20, 20, 20) 70%, rgb(80, 52, 38) 20%);
-  height: 100vh;
+  height: 80vh;
 }
 
 .home-container h1 {
@@ -12,7 +12,7 @@
 .home-icons {
   display: flex;
   flex-direction: column;
-  padding: 10vh 5vw;
+  padding: 5vh 5vw;
   color: hsl(0, 0%, 100%);
   gap: 25px;
 }
@@ -21,8 +21,9 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 20px;
+  padding: 0 10px;
 }
 
 .abu-image {
@@ -58,4 +59,53 @@
 100% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
 }
+}
+
+.landing-page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10vw;
+}
+
+.desktop-computer {
+  max-width: 30px;
+}
+
+
+.landing-page-name {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  font-size: 1rem;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+.home-par {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: var(--mb-2-5);
+  max-width: none;
+  font-size: 0.5;
+}
+
+.par-section {
+  padding: 10px 10vw;
 }
