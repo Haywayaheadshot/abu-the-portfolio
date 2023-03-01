@@ -1,13 +1,12 @@
 .footer-container {
   display: flex;
   flex-direction: row;
-
-  /* align-items: center; */
   justify-content: center;
   padding: 20px;
   gap: 20px;
   background: linear-gradient(-14deg, rgb(80, 52, 38) 70%, rgb(20, 20, 20) 20%);
   color: hsl(0, 0%, 100%);
+  height: fit-content;
 }
 
 .footer-social-media-section {
@@ -19,8 +18,6 @@
 .footer-social-media-ul {
   display: grid;
   grid-template-columns: auto auto;
-
-  /* width: 40%; */
   gap: 20px;
 }
 
@@ -28,12 +25,6 @@
   display: grid;
   grid-template-columns: auto auto;
   gap: 10px;
-
-  /* width: 70%; */
-
-  /* overflow-y: scroll;
-  scroll-padding: 24px;
-  scroll-snap-type: y mandatory; */
 }
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
