@@ -4,7 +4,7 @@ import { IconContext } from 'react-icons';
 import {
   FaFacebook, FaGithub, FaInstagram, FaTwitter,
 } from 'react-icons/fa';
-import desktop from '../components/assets/images/desktop-computer.png';
+// import desktop from '../components/assets/images/desktop-computer.png';
 
 function Home() {
   return (
@@ -21,7 +21,7 @@ function Home() {
         <div className="abu-image" />
       </section>
       <section className="landing-page-header">
-        <img src={desktop} alt="Monitor and keyboard" className="desktop-computer" />
+        {/* <img src={desktop} alt="Monitor and keyboard" className="desktop-computer" /> */}
         <h1 className="landing-page-name">ABUBAKAR UMMAR</h1>
       </section>
       <section className="par-section">

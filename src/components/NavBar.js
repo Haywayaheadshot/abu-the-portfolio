@@ -10,7 +10,7 @@ function NavBar() {
     setOpen(!open);
     const body = document.getElementById('body');
     const popBg = document.querySelector('.hamburger-pop-bg');
-    const footerAnime = document.querySelector('.bar-ball-container');
+    const footerAnime = document.querySelector('.bar');
     if (!open) {
       body.classList.add('open');
       popBg.style.display = 'block';
