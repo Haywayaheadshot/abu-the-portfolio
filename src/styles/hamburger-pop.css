@@ -1,14 +1,12 @@
 .hamburger-pop-bg {
   /* max-width: 600px; */
   margin: 4.8rem auto;
-  background: #acd4e4;
   font-family: tahoma, helvetica neue, helvetica, arial, sans-serif;
   background: linear-gradient(to right, rgb(43, 33, 30), rgb(80, 52, 38));
   text-align: center;
   position: fixed;
   top: 2vh;
   display: none;
-  height: fit-content;
   width: 50%;
   border-top-right-radius: 30px;
   color: hsl(0, 0%, 100%);
@@ -432,7 +430,7 @@
 
   80% {
     border-radius: 30%;
-    transform: translate3d(20, 10px, 20px);
+    transform: translate3d(20px, 10px, 20px);
   }
 
   100% {
@@ -457,7 +455,7 @@
 
   80% {
     border-radius: 30%;
-    transform: translate3d(20, 10px, 20px);
+    transform: translate3d(20px, 10px, 20px);
   }
 
   100% {

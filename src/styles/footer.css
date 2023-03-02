@@ -76,6 +76,13 @@
 }
 
 @keyframes ball-move {
-  from { left: calc(100% - 70px); transform: rotate(360deg); }
-  to { left: calc(0% - 35px); transform: rotate(0deg); }
+  from {
+    left: calc(100% - 70px);
+    transform: rotate(360deg);
+  }
+
+  to {
+    left: calc(0% - 35px);
+    transform: rotate(0deg);
+  }
 }

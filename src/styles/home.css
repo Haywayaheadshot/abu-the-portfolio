@@ -104,7 +104,7 @@
   color: hsl(0, 0%, 100%);
   margin-bottom: var(--mb-2-5);
   max-width: none;
-  font-size: 0.5;
+  font-size: 1.2rem;
 }
 
 .par-section {
