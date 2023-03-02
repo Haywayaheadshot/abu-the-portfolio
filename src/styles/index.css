@@ -69,7 +69,6 @@ ul {
   padding: 0;
 }
 
-
 @keyframes blob-turn {
   0% {
     transform: rotate(0deg);
