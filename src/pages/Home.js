@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/home.css';
 import { IconContext } from 'react-icons';
 import {
-  FaFacebook, FaGithub, FaInstagram, FaTwitter,
+  FaGithub, FaInstagram, FaLinkedinIn, FaTwitter,
 } from 'react-icons/fa';
 // import desktop from '../components/assets/images/desktop-computer.png';
 
@@ -11,11 +11,27 @@ function Home() {
     <div className="home-container">
       <section className="home-header-div">
         <ul className="home-icons">
-          <IconContext.Provider value={{ size: '1em', className: 'global-class-name' }}>
-            <l1><FaGithub /></l1>
-            <l1><FaFacebook /></l1>
-            <l1><FaTwitter /></l1>
-            <l1><FaInstagram /></l1>
+          <IconContext.Provider value={{ size: '1em', className: 'global-class-name', color: 'hsl(0, 0%, 100%)' }}>
+            <l1>
+              <a href="https://github.com/Haywayaheadshot" target="_blank" rel="noopener noreferrer">
+                <FaGithub />
+              </a>
+            </l1>
+            <l1>
+              <a href="https://www.linkedin.com/in/abubakar-ummar/" target="_blank" rel="noopener noreferrer">
+                <FaLinkedinIn />
+              </a>
+            </l1>
+            <l1>
+              <a href="https://twitter.com/haywayalive" target="_blank" rel="noopener noreferrer">
+                <FaTwitter />
+              </a>
+            </l1>
+            <l1>
+              <a href="https://www.instagram.com/haywayaofficial/?next=%2Fhaywayaofficial%2F&hl=en" target="_blank" rel="noopener noreferrer">
+                <FaInstagram />
+              </a>
+            </l1>
           </IconContext.Provider>
         </ul>
         <div className="abu-image" />
