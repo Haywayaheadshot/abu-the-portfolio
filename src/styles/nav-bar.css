@@ -46,6 +46,10 @@
   display: none;
 }
 
+.open {
+  overflow-y: hidden;
+}
+
 @media (min-width: 745px) {
   .for-phone {
     display: none;

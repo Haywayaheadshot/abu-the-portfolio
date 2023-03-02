@@ -1,13 +1,12 @@
 .footer-container {
   display: flex;
   flex-direction: row;
-
-  /* align-items: center; */
   justify-content: center;
   padding: 20px;
   gap: 20px;
   background: linear-gradient(-14deg, rgb(80, 52, 38) 70%, rgb(20, 20, 20) 20%);
   color: hsl(0, 0%, 100%);
+  height: fit-content;
 }
 
 .footer-social-media-section {
@@ -16,8 +15,74 @@
   align-items: center;
 }
 
-.footer-social-media-section ul {
+.footer-social-media-ul {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+.foot-logo-sec-ul {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+.bar-ball-container {
   display: flex;
-  flex-direction: column;
-  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 80vw;
+  font-family: "Montserrat", sans-serif;
+}
+
+.ball {
+  position: relative;
+  bottom: 100px;
+  left: calc(100% - 70px);
+  width: 100px;
+  height: 100px;
+  background: #f02;
+  border-radius: 50%;
+  animation: ball-move 4s ease-in-out 2s infinite alternate;
+}
+
+.ball::after {
+  position: absolute;
+  content: '';
+  top: 50px;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.bar {
+  width: 500px;
+  height: 25px;
+  background: black;
+  border-radius: 30px;
+  transform: rotate(-15deg);
+  filter: drop-shadow(20px 10px 4px gray);
+  animation: up-down 4s ease-in-out 2s infinite alternate;
+}
+
+@keyframes up-down {
+  from { transform: rotate(-15deg); }
+  to { transform: rotate(15deg); }
+}
+
+@keyframes ball-move {
+  from {
+    left: calc(100% - 70px);
+    transform: rotate(360deg);
+  }
+
+  to {
+    left: calc(0% - 35px);
+    transform: rotate(0deg);
+  }
 }
