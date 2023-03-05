@@ -9,15 +9,15 @@ function NavBar() {
   const toggleMenu = () => {
     setOpen(!open);
     const body = document.getElementById('body');
-    const popBg = document.querySelector('.hamburger-pop-bg');
+    // const popBg = document.querySelector('.hamburger-pop-bg');
     const footerAnime = document.querySelector('.bar');
     if (!open) {
       body.classList.add('open');
-      popBg.style.display = 'block';
+      // popBg.style.display = 'block';
       footerAnime.style.display = 'none';
     } else {
       body.classList.remove('open');
-      popBg.style.display = 'none';
+      // popBg.style.display = 'none';
       footerAnime.style.display = 'flex';
     }
   };

@@ -14,6 +14,7 @@
   overflow-y: scroll;
   scroll-padding: 24px;
   scroll-snap-type: y mandatory;
+  display: none;
 }
 
 .btn-container {
