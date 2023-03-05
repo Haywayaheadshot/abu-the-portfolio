@@ -6,7 +6,6 @@
   text-align: center;
   position: fixed;
   top: 2vh;
-  display: none;
   width: 50%;
   border-top-right-radius: 30px;
   color: hsl(0, 0%, 100%);
@@ -14,6 +13,7 @@
   overflow-y: scroll;
   scroll-padding: 24px;
   scroll-snap-type: y mandatory;
+  display: none;
 }
 
 .btn-container {
