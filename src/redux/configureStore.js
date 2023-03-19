@@ -7,9 +7,10 @@ const logger = reduxLogger.createLogger();
 
 const store = configureStore({
   reducer: {
-    projects: projectSlice,
+    projects: projectSlice.reducer,
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });
 
+// export const { updateProjects } = projectSlice.actions;
 export default store;

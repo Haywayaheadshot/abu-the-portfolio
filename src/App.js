@@ -2,11 +2,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import About from './pages/About';
-import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import HamburgerPop from './components/HamburgerPop';
 import './styles/App.css';
 import Footer from './pages/Footer';
+import Portfolio from './pages/Portfolio';
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
             <Route exact path="/" element={<Home />} />
             <Route exact path="/about" element={<About />} />
             <Route exact path="/contact" element={<Contact />} />
-            <Route exact path="/projects" element={<Projects />} />
+            <Route exact path="/portfolio" element={<Portfolio />} />
           </Routes>
           <HamburgerPop />
         </main>

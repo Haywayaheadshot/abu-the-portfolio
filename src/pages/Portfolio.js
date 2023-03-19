@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/projects.css';
+import { useDispatch, useSelector } from 'react-redux';
+import { projects } from '../redux/projects/Projects';
 
-function Projects() {
+function Portfolio() {
+  const project = useSelector((state) => state.projects);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(projects());
+  });
+  console.log(project);
   return (
     <div className="proj-header-container">
       <section>
@@ -21,4 +29,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Portfolio;
