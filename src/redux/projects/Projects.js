@@ -1,19 +1,16 @@
-// import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-// import axios from 'axios';
+import { createSlice } from '@reduxjs/toolkit';
 
-// defaultstate =
-// const greetingsSlice = createSlice({
-//   name: 'projects',
-//   initialState: [],
-//   extraReducers: (builder) => {
-//     builder.addCase(fetchGreetings.fulfilled, (_, action) => action.payload);
-//   },
-// });
+const projectSlice = createSlice({
+  name: 'projects',
+  initialState: {
+    projects: [{ name: 'project 1' }],
+  },
+  reducers: {
+    updateProjects: (state, action) => {
+      state.projects = action.payload;
+    },
+  },
+});
 
-// export const fetchGreetings = createAsyncThunk('FETCH_MESSAGE', () => axios.get(url)
-//   .then((response) => {
-//     const greeting = response.data.message;
-//     return greeting;
-//   }));
-
-// export default greetingsSlice.reducer;
+export const { updateProjects } = projectSlice.actions;
+export default projectSlice.reducer;

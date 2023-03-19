@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-// import addOnsReducer from './addOns/AddOns';
+import projectSlice from './projects/Projects';
 
 const reduxLogger = require('redux-logger');
 
@@ -7,7 +7,7 @@ const logger = reduxLogger.createLogger();
 
 const store = configureStore({
   reducer: {
-    // plans: planReducer,
+    projects: projectSlice,
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });
