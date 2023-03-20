@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import '../styles/projects.css';
-import { useDispatch, useSelector } from 'react-redux';
-import { projects } from '../redux/projects/Projects';
+import { useDispatch } from 'react-redux';
+import { getRepos } from '../redux/projects/Projects';
 
 function Portfolio() {
-  const project = useSelector((state) => state.projects);
+  // const project = useSelector((state) => state.projects);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(projects());
+    dispatch(getRepos());
   });
-  console.log(project);
+  // console.log(project);
   return (
     <div className="proj-header-container">
       <section>

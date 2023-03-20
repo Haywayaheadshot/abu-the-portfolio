@@ -1,16 +1,50 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+// import { Octokit } from '@octokit/core';
+import axios from 'axios';
 
-const projectSlice = createSlice({
-  name: 'projects',
-  initialState: {
-    projects: [{ name: 'project 1' }],
+const GET_REPOS = 'ABU-THE-PORTFOLIO/src/redux/Projects/getRepos';
+
+const initialState = {
+  repos: [],
+  status: null,
+  error: null,
+};
+
+// const octokit = new Octokit({ auth: '' });
+// const apiVersion = '2022-11-28';
+
+// const url = 'https://cors-anywhere.herokuapp.com/https://api.github.com/user/repos';
+const url = 'http://0.0.0.0:8080/https://api.github.com/user/repos';
+
+const headers = {
+  Authorization: 'Bearer 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',
+  'x-github-api-version': '2022-11-28',
+};
+
+const getReposApi = () => axios.get(url, { headers });
+
+// action creator to get repos
+export const getRepos = createAsyncThunk(
+  GET_REPOS,
+  async () => {
+    const response = await getReposApi();
+    console.log(response);
+    return response.data;
   },
-  reducers: {
-    updateProjects: (state, action) => {
-      state.projects = action.payload;
-    },
+);
+
+const reposSlice = createSlice({
+  name: 'repos',
+  initialState,
+  reducers: {},
+  extraReducers: (builder) => {
+    builder.addCase(getRepos.fulfilled, (_, action) => action.payload);
+    builder.addCase(getRepos.rejected, (state) => {
+      const newState = state;
+      newState.status = 'failed';
+    });
+    builder.addCase(getRepos.pending, (_, action) => action.payload);
   },
 });
 
-export const { updateProjects } = projectSlice.actions;
-export default projectSlice.reducer;
+export default reposSlice.reducer;
