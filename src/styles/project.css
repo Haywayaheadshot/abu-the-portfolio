@@ -1,0 +1,47 @@
+.proj-ul {
+  display: flex;
+  flex-direction: column;
+
+  /* gap: 20px; */
+  justify-content: center;
+  align-items: center;
+  max-width: 80vw;
+
+  /* max-height: 50vh; */
+  box-shadow: 0 0 5px 0 rgb(80, 52, 38);
+  padding: 0 10px;
+}
+
+.proj-ul h1,
+.proj-ul p,
+.proj-ul h3,
+.proj-ul h4 {
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+.proj-screen-shot {
+  max-width: 50vw;
+
+  /* scroll-snap-align: start; */
+  flex: 0 0 100%;
+}
+
+.tech-built-with {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+@media (min-width: 745px) {
+  .proj-ul {
+    max-width: 40vw;
+  }
+
+  .proj-screen-shot {
+    max-width: 35vw;
+    max-height: 30vh;
+  }
+}

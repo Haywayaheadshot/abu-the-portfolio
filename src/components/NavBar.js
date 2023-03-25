@@ -24,7 +24,7 @@ function NavBar() {
 
   return (
     <div className="nav-container">
-      <NavLink to="/" onClick={() => toggleMenu(false)}>
+      <NavLink to="/" onClick={() => setOpen(false)}>
         <h1 className="logo cartoonish-font">Abubakar Ummar</h1>
       </NavLink>
       <section className="for-phone">

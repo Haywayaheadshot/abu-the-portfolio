@@ -2,11 +2,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import About from './pages/About';
-import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import HamburgerPop from './components/HamburgerPop';
 import './styles/App.css';
 import Footer from './pages/Footer';
+import Projects from './pages/Projects';
 
 function App() {
   return (
