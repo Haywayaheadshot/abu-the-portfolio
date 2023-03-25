@@ -102,11 +102,12 @@
 
 .home-par {
   color: hsl(0, 0%, 100%);
-  margin-bottom: var(--mb-2-5);
+  /* margin-bottom: var(--mb-2-5); */
   max-width: none;
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
 
 .par-section {
   padding: 10px 10vw;
+  border-bottom: 1px solid rgb(20, 20, 20);
 }

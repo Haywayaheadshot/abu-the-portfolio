@@ -24,7 +24,7 @@ function NavBar() {
 
   return (
     <div className="nav-container">
-      <NavLink to="/" onClick={() => toggleMenu(false)}>
+      <NavLink to="/" onClick={() => setOpen(false)}>
         <h1 className="logo cartoonish-font">Abubakar Ummar</h1>
       </NavLink>
       <section className="for-phone">
@@ -45,8 +45,8 @@ function NavBar() {
             <NavLink to="/contact" onClick={() => toggleMenu(false)}>
               <li className="hamburger-ul-li">Contact</li>
             </NavLink>
-            <NavLink to="/portfolio" onClick={() => toggleMenu(false)}>
-              <li className="hamburger-ul-li">Portfolio</li>
+            <NavLink to="/projects" onClick={() => toggleMenu(false)}>
+              <li className="hamburger-ul-li">Projects</li>
             </NavLink>
           </ul>
         ) : null}

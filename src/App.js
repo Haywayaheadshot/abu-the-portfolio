@@ -6,7 +6,7 @@ import Contact from './pages/Contact';
 import HamburgerPop from './components/HamburgerPop';
 import './styles/App.css';
 import Footer from './pages/Footer';
-import Portfolio from './pages/Portfolio';
+import Projects from './pages/Projects';
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
             <Route exact path="/" element={<Home />} />
             <Route exact path="/about" element={<About />} />
             <Route exact path="/contact" element={<Contact />} />
-            <Route exact path="/portfolio" element={<Portfolio />} />
+            <Route exact path="/projects" element={<Projects />} />
           </Routes>
           <HamburgerPop />
         </main>

@@ -1,15 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit';
-import reposSlice from './projects/Projects';
+import reposReducer from './projects/Projects';
 
-// const reduxLogger = require('redux-logger');
+const reduxLogger = require('redux-logger');
 
-// const logger = reduxLogger.createLogger();
+const logger = reduxLogger.createLogger();
 
 const store = configureStore({
   reducer: {
-    repos: reposSlice,
+    repos: reposReducer,
   },
-  // middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });
 
 export default store;
