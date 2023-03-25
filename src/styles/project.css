@@ -41,5 +41,6 @@
 
   .proj-screen-shot {
     max-width: 35vw;
+    max-height: 30vh;
   }
 }

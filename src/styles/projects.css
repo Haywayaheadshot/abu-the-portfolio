@@ -31,6 +31,7 @@
 
 @media (min-width: 745px) {
   .projects-display {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto;
   }
 }

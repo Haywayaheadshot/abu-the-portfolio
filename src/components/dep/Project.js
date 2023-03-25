@@ -12,8 +12,8 @@ const Project = ({
       </h1>
     </li>
     <li>
-      <img className="proj-screen-shot for-phone" src={mobileSrc} alt="Project Screenshot" />
-      <img className="proj-screen-shot for-desk" src={deskScreenShot} alt="Project Screenshot" />
+      <img className="proj-screen-shot for-phone" src={mobileSrc === '' ? 'no-camera.png' : mobileSrc} alt="Project Screenshot" />
+      <img className="proj-screen-shot for-desk" src={deskScreenShot === '' ? 'no-camera.png' : deskScreenShot} alt="Project Screenshot" />
     </li>
     <li>
       <p>
