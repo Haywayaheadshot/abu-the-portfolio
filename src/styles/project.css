@@ -10,6 +10,10 @@
   /* max-height: 50vh; */
   box-shadow: 0 0 5px 0 rgb(80, 52, 38);
   padding: 0 10px;
+  border-radius: 15px;
+  background-color: rgb(20, 20, 20);
+
+  /* background: radial-gradient(circle, rgb(80, 52, 38) 30%, rgb(20, 20, 20) 30%, rgb(43, 33, 30) 40%); */
 }
 
 .proj-ul h1,
