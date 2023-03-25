@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import '../../styles/project.css';
 
 const Project = ({
-  title, mobileSrc, description, builtWith, liveDemo, sourceCode,
+  title, mobileSrc, description, builtWith, liveDemo, sourceCode, deskScreenShot,
 }) => (
   <ul className="proj-ul">
     <li>
@@ -12,7 +12,8 @@ const Project = ({
       </h1>
     </li>
     <li>
-      <img className="proj-screen-shot" src={mobileSrc} alt="Project Screenshot" />
+      <img className="proj-screen-shot for-phone" src={mobileSrc} alt="Project Screenshot" />
+      <img className="proj-screen-shot for-desk" src={deskScreenShot} alt="Project Screenshot" />
     </li>
     <li>
       <p>
@@ -52,4 +53,5 @@ Project.propTypes = {
   builtWith: PropTypes.arrayOf(PropTypes.string).isRequired,
   liveDemo: PropTypes.string.isRequired,
   sourceCode: PropTypes.string.isRequired,
+  deskScreenShot: PropTypes.string.isRequired,
 };

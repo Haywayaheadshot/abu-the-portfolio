@@ -14,6 +14,7 @@ const defaultState = [
     stack: 'frontend, fullstack',
     builtWith: ['React', 'Redux'],
     mobileScreenShot: 'doctors-appointment/Doctors-Appointment-front-end-mobile.png',
+    deskScreenShot: 'doctors-appointment/Doctors-Appointment-front-end-desk.png',
   },
   {
     id: uuidv4(),
@@ -28,6 +29,7 @@ const defaultState = [
     stack: 'backend, fullstack',
     builtWith: ['Ruby', 'Ruby On Rails'],
     mobileScreenShot: 'doctors-appointment/Doctors-Appointment-back-end-mobile.png',
+    deskScreenShot: 'doctors-appointment/Doctors-Appointment-back-end-desk.png',
   },
 ];
 

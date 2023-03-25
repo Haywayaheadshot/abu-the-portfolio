@@ -19,9 +19,9 @@
   cursor: pointer;
 }
 
-.for-phone {
+/* .for-phone {
   display: block;
-}
+} */
 
 .hamburger-ul {
   position: fixed;
@@ -42,22 +42,22 @@
   color: hsl(0, 0%, 100%);
 }
 
-.for-desk {
+/* .for-desk {
   display: none;
-}
+} */
 
 .open {
   overflow-y: hidden;
 }
 
 @media (min-width: 745px) {
-  .for-phone {
+  /* .for-phone {
     display: none;
   }
 
   .for-desk {
     display: block;
-  }
+  } */
 
   .nav-container {
     padding: 5vh 10vw;

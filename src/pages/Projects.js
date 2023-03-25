@@ -38,6 +38,7 @@ function Portfolio() {
               builtWith={r.builtWith}
               liveDemo={r.liveDemo}
               sourceCode={r.sourceCode}
+              deskScreenShot={r.deskScreenShot}
             />
           </div>
         ))}
