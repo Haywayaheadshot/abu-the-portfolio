@@ -15,14 +15,33 @@ function Portfolio() {
           Below are some of the projects I have worked on.
         </h4>
       </section>
-      {repo.map((r) => (
-        <section key={r.id}>
-          <Project
-            title={r.title}
-            mobileSrc={r.mobileScreenShot}
-          />
-        </section>
-      ))}
+      <section>
+        <select>
+          <option>
+            All
+          </option>
+          <option>
+            Front-End
+          </option>
+          <option>
+            Back-End
+          </option>
+        </select>
+      </section>
+      <section className="projects-display">
+        {repo.map((r) => (
+          <div key={r.id}>
+            <Project
+              title={r.title}
+              mobileSrc={r.mobileScreenShot}
+              description={r.description}
+              builtWith={r.builtWith}
+              liveDemo={r.liveDemo}
+              sourceCode={r.sourceCode}
+            />
+          </div>
+        ))}
+      </section>
     </div>
   );
 }

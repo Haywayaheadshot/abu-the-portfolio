@@ -1,8 +1,11 @@
+.proj-header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .proj-header-container section {
-  /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
   padding: 30px 20px;
 }
 
@@ -12,4 +15,16 @@
   margin: 0;
   padding: 0;
   color: hsl(0, 0%, 100%);
+}
+
+.projects-display {
+  max-height: 80vh;
+  overflow-x: scroll;
+  scroll-padding: 24px;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  gap: 10px;
 }
