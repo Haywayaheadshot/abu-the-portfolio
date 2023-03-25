@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/projects.css';
 import { useSelector } from 'react-redux';
+import Project from '../components/dep/Project';
 
 function Portfolio() {
   const repo = useSelector((state) => state.repos);
@@ -16,7 +17,10 @@ function Portfolio() {
       </section>
       {repo.map((r) => (
         <section key={r.id}>
-          <h1>{r.title}</h1>
+          <Project
+            title={r.title}
+            mobileSrc={r.mobileScreenShot}
+          />
         </section>
       ))}
     </div>
