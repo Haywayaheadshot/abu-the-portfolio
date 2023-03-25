@@ -22,6 +22,7 @@
 
 .proj-screen-shot {
   max-width: 50vw;
+
   /* scroll-snap-align: start; */
   flex: 0 0 100%;
 }
