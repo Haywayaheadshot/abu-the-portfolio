@@ -1,14 +1,11 @@
 import React from 'react';
 // import Blobs from '../components/dep/Blobs';
-import blood from '../components/assets/images/blood.png';
+// import blood from '../components/assets/images/blood.png';
 import '../styles/contact.css';
 
 function Contact() {
   return (
     <div className="contact-container">
-      <span className="tk-blob-svg">
-        <img className="tk-blob svg" src={blood} alt="Blob" />
-      </span>
       <h1 className="contact-header">Contact Me</h1>
       <form className="contact-form">
         <label htmlFor="name">

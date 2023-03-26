@@ -1,0 +1,19 @@
+.about-container {
+  padding: 30px 20px;
+}
+
+.about-container-par {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.1em;
+}
+
+@media (min-width: 745px) {
+  .about-container {
+    padding: 30px 50px;
+  }
+
+  .about-container-par {
+    font-size: 1.3em;
+    padding: 2vh 5vw;
+  }
+}

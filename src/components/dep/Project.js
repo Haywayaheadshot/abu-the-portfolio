@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import '../../styles/project.css';
 
 const Project = ({
-  title, mobileSrc, description, builtWith, liveDemo, sourceCode, deskScreenShot,
+  title, mobileSrc, description, builtWith, liveDemo, sourceCode, deskScreenShot, stack,
 }) => (
   <ul className="proj-ul">
     <li>
@@ -19,6 +19,16 @@ const Project = ({
       <p>
         {description}
       </p>
+    </li>
+    <li className="tech-built-with">
+      <h3>Stack:</h3>
+      {stack.map((s) => (
+        <h3 key={s.id}>
+          [
+          {s}
+          ]
+        </h3>
+      ))}
     </li>
     <li className="tech-built-with">
       <h3>Built with:</h3>
@@ -54,4 +64,5 @@ Project.propTypes = {
   liveDemo: PropTypes.string.isRequired,
   sourceCode: PropTypes.string.isRequired,
   deskScreenShot: PropTypes.string.isRequired,
+  stack: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
