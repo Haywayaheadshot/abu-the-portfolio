@@ -20,18 +20,16 @@ function Portfolio() {
   return (
     <div className="proj-header-container">
       <section>
-        <h1 className="projects-header">Welcome To The Projects Section</h1>
+        <h1 className="projects-header">Welcome To The Projects Section.</h1>
         <h4 className="projects-sub-header">
           Below are some of the projects I have worked on.
         </h4>
       </section>
-      <section>
-        <select onChange={handleSelectChange}>
-          <option value="">All</option>
-          <option value="Front-End">Front-End</option>
-          <option value="Back-End">Back-End</option>
-        </select>
-      </section>
+      <select className="select-projs" onChange={handleSelectChange}>
+        <option value="">All Projects</option>
+        <option value="Front-End">Front-End Projects</option>
+        <option value="Back-End">Back-End Projects</option>
+      </select>
       <section className="projects-display">
         {filteredRepo.map((r) => (
           <Project

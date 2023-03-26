@@ -53,9 +53,21 @@ function NavBar() {
       </section>
       <section className="for-desk">
         <ul className="desk-ul">
-          <li className="desk-ul-li">About</li>
-          <li className="desk-ul-li">Contact</li>
-          <li className="desk-ul-li">Projects</li>
+          <li className="desk-ul-li">
+            <NavLink to="/about">
+              About
+            </NavLink>
+          </li>
+          <li className="desk-ul-li">
+            <NavLink to="/contact">
+              Contact
+            </NavLink>
+          </li>
+          <li className="desk-ul-li">
+            <NavLink to="/projects">
+              Projects
+            </NavLink>
+          </li>
         </ul>
       </section>
     </div>
