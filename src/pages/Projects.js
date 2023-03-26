@@ -1,46 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/projects.css';
 import { useSelector } from 'react-redux';
 import Project from '../components/dep/Project';
 
 function Portfolio() {
   const repo = useSelector((state) => state.repos);
+
+  const [selectedOption, setSelectedOption] = useState('');
+
+  const handleSelectChange = (event) => {
+    const selectedValue = event.target.value;
+    setSelectedOption(selectedValue);
+  };
+
+  const filteredRepo = selectedOption
+    ? repo.filter((r) => r.stack.includes(selectedOption))
+    : repo;
+
   return (
     <div className="proj-header-container">
       <section>
-        <h1 className="projects-header">
-          Welcome To The Projects Section
-        </h1>
+        <h1 className="projects-header">Welcome To The Projects Section</h1>
         <h4 className="projects-sub-header">
           Below are some of the projects I have worked on.
         </h4>
       </section>
       <section>
-        <select>
-          <option>
-            All
-          </option>
-          <option>
-            Front-End
-          </option>
-          <option>
-            Back-End
-          </option>
+        <select onChange={handleSelectChange}>
+          <option value="">All</option>
+          <option value="Front-End">Front-End</option>
+          <option value="Back-End">Back-End</option>
         </select>
       </section>
       <section className="projects-display">
-        {repo.map((r) => (
-          <div key={r.id}>
-            <Project
-              title={r.title}
-              mobileSrc={r.mobileScreenShot}
-              description={r.description}
-              builtWith={r.builtWith}
-              liveDemo={r.liveDemo}
-              sourceCode={r.sourceCode}
-              deskScreenShot={r.deskScreenShot}
-            />
-          </div>
+        {filteredRepo.map((r) => (
+          <Project
+            key={r.id}
+            id={r.id}
+            title={r.title}
+            mobileSrc={r.mobileScreenShot}
+            description={r.description}
+            builtWith={r.builtWith}
+            liveDemo={r.liveDemo}
+            sourceCode={r.sourceCode}
+            deskScreenShot={r.deskScreenShot}
+            stack={r.stack}
+          />
         ))}
       </section>
     </div>
