@@ -5,12 +5,12 @@ import { NavLink } from 'react-router-dom';
 
 function NavBar() {
   const [open, setOpen] = useState(false);
+  const footerAnime = document.querySelector('.bar');
 
   const toggleMenu = () => {
     setOpen(!open);
     const body = document.getElementById('body');
     // const popBg = document.querySelector('.hamburger-pop-bg');
-    const footerAnime = document.querySelector('.bar');
     if (!open) {
       body.classList.add('open');
       // popBg.style.display = 'block';
@@ -24,7 +24,13 @@ function NavBar() {
 
   return (
     <div className="nav-container">
-      <NavLink to="/" onClick={() => setOpen(false)}>
+      <NavLink
+        to="/"
+        onClick={() => {
+          setOpen(false);
+          footerAnime.style.display = 'flex';
+        }}
+      >
         <h1 className="logo cartoonish-font">Abubakar Ummar</h1>
       </NavLink>
       <section className="for-phone">
