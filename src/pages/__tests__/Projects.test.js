@@ -82,8 +82,8 @@ describe('Portfolio', () => {
   });
 
   const testData = [
-    { value: 'All Projects', expectedLength: 1, expectedText: '' },
-    { value: 'Front-End', expectedLength: 1, expectedText: 'Front-End' },
+    { value: 'All Projects', expectedLength: 3, expectedText: '' },
+    { value: 'Front-End', expectedLength: 2, expectedText: 'Front-End' },
     { value: 'Back-End', expectedLength: 1, expectedText: 'Back-End' },
     { value: 'Full-Stack', expectedLength: 1, expectedText: 'Full-Stack' },
   ];

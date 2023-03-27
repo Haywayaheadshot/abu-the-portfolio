@@ -31,10 +31,9 @@ function Portfolio() {
         <option value="Back-End">Back-End Projects</option>
         <option value="Full-Stack">Full-Stack Projects</option>
       </select>
-      <section className="projects-display" data-testid="project">
-        {filteredRepo.map((r) => (
+      {filteredRepo.map((r) => (
+        <section key={r.id} className="projects-display" data-testid="project">
           <Project
-            key={r.id}
             id={r.id}
             title={r.title}
             mobileSrc={r.mobileScreenShot}
@@ -45,8 +44,8 @@ function Portfolio() {
             deskScreenShot={r.deskScreenShot}
             stack={r.stack}
           />
-        ))}
-      </section>
+        </section>
+      ))}
     </div>
   );
 }
