@@ -1,4 +1,5 @@
-.proj-header-container {
+.proj-header-container,
+.skills-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,7 +26,8 @@
   color: hsl(0, 0%, 100%);
 }
 
-.projects-display {
+.projects-display,
+.skills-display {
   max-height: 80vh;
   overflow-x: scroll;
   scroll-padding: 24px;

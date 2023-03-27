@@ -13,9 +13,11 @@
 }
 
 .proj-ul h1,
+.proj-ul h2,
 .proj-ul p,
 .proj-ul h3,
-.proj-ul h4 {
+.proj-ul h4,
+.proj-ul h5 {
   color: hsl(0, 0%, 100%);
   text-align: center;
 }

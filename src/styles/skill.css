@@ -1,0 +1,11 @@
+.skill-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-list-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
