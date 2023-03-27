@@ -75,32 +75,32 @@ describe('Portfolio', () => {
   it('displays the correct sub-header', async () => {
     await waitFor(() => {
       const subHeader = screen.getByText(
-        'Below are some of the projects I have worked on.'
+        'Below are some of the projects I have worked on.',
       );
       expect(subHeader).toBeInTheDocument();
     });
   });
 
-//   const testData = [
-//     { value: 'All Projects', expectedLength: 3, expectedText: '' },
-//     { value: 'Front-End', expectedLength: 2, expectedText: 'Front-End' },
-//     { value: 'Back-End', expectedLength: 1, expectedText: 'Back-End' },
-//     { value: 'Full-Stack', expectedLength: 1, expectedText: 'Full-Stack' },
-//   ];
+  const testData = [
+    { value: 'All Projects', expectedLength: 3, expectedText: '' },
+    { value: 'Front-End', expectedLength: 2, expectedText: 'Front-End' },
+    { value: 'Back-End', expectedLength: 1, expectedText: 'Back-End' },
+    { value: 'Full-Stack', expectedLength: 1, expectedText: 'Full-Stack' },
+  ];
 
-//   testData.forEach(({ value, expectedLength, expectedText }) => {
-//     it(`renders projects correctly for "${value}" option`, async () => {
-//       fireEvent.change(screen.getByTestId('select-projs'), {
-//         target: { value },
-//       });
+  testData.forEach(({ value, expectedLength, expectedText }) => {
+    it(`renders projects correctly for "${value}" option`, async () => {
+      fireEvent.change(screen.getByTestId('select-projs'), {
+        target: { value },
+      });
 
-//       await waitFor(() => {
-//         const projects = screen.getAllByTestId('project');
-//         expect(projects.length).toBe(expectedLength);
-//         expect(
-//           projects.every((project) => project.textContent.includes(expectedText)),
-//         ).toBe(true);
-//       });
-//     });
-//   });
+      await waitFor(() => {
+        const projects = screen.getAllByTestId('project');
+        expect(projects.length).toBe(expectedLength);
+        expect(
+          projects.every((project) => project.textContent.includes(expectedText)),
+        ).toBe(true);
+      });
+    });
+  });
 });
