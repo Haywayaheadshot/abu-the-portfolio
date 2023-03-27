@@ -23,7 +23,7 @@ const Project = ({
     <li className="tech-built-with">
       <h3>Stack:</h3>
       {stack.map((s) => (
-        <h3 key={s.id}>
+        <h3 key={`stack-${s.id}`}>
           [
           {s}
           ]

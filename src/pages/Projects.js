@@ -25,13 +25,13 @@ function Portfolio() {
           Below are some of the projects I have worked on.
         </h4>
       </section>
-      <select className="select-projs" onChange={handleSelectChange}>
+      <select className="select-projs" onChange={handleSelectChange} data-testid="select-projs">
         <option value="">All Projects</option>
         <option value="Front-End">Front-End Projects</option>
         <option value="Back-End">Back-End Projects</option>
         <option value="Full-Stack">Full-Stack Projects</option>
       </select>
-      <section className="projects-display">
+      <section className="projects-display" data-testid="project">
         {filteredRepo.map((r) => (
           <Project
             key={r.id}
