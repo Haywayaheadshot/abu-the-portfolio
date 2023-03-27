@@ -29,6 +29,7 @@ function Portfolio() {
         <option value="">All Projects</option>
         <option value="Front-End">Front-End Projects</option>
         <option value="Back-End">Back-End Projects</option>
+        <option value="Full-Stack">Full-Stack Projects</option>
       </select>
       <section className="projects-display">
         {filteredRepo.map((r) => (
