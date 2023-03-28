@@ -5,22 +5,22 @@
 } */
 
 .level-span {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .skills-container-h1 {
-    font-size: 3em;
-    color: hsl(0, 0%, 100%);
+  font-size: 3em;
+  color: hsl(0, 0%, 100%);
 }
 
 .skills-container {
-    gap: 50px;
+  gap: 50px;
 }
 
 @media (min-width: 1182px) {
-    .skills-display {
-        display: grid;
-        grid-template-columns: auto auto;
-        padding: 10px 40px;
-    }
+  .skills-display {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px 40px;
+  }
 }
