@@ -7,15 +7,17 @@ function Skills() {
   const skill = useSelector((state) => state.skills);
   return (
     <div className="skills-container">
-      <h1>Skills</h1>
-      {skill.map((s) => (
-        <section key={s.id} className="skills-display" data-testid="skill">
-          <Skill
-            title={s.title}
-            skillArray={s.skillArray}
-          />
-        </section>
-      ))}
+      <h1 className="skills-container-h1">Skills</h1>
+      <section className="skills-display">
+        {skill.map((s) => (
+          <div key={s.id} data-testid="skill">
+            <Skill
+              title={s.title}
+              skillArray={s.skillArray}
+            />
+          </div>
+        ))}
+      </section>
     </div>
   );
 }

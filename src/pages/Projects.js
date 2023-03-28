@@ -31,21 +31,23 @@ function Portfolio() {
         <option value="Back-End">Back-End Projects</option>
         <option value="Full-Stack">Full-Stack Projects</option>
       </select>
-      {filteredRepo.map((r) => (
-        <section key={r.id} className="projects-display" data-testid="project">
-          <Project
-            id={r.id}
-            title={r.title}
-            mobileSrc={r.mobileScreenShot}
-            description={r.description}
-            builtWith={r.builtWith}
-            liveDemo={r.liveDemo}
-            sourceCode={r.sourceCode}
-            deskScreenShot={r.deskScreenShot}
-            stack={r.stack}
-          />
-        </section>
-      ))}
+      <section className="projects-display">
+        {filteredRepo.map((r) => (
+          <div key={r.id} data-testid="project">
+            <Project
+              id={r.id}
+              title={r.title}
+              mobileSrc={r.mobileScreenShot}
+              description={r.description}
+              builtWith={r.builtWith}
+              liveDemo={r.liveDemo}
+              sourceCode={r.sourceCode}
+              deskScreenShot={r.deskScreenShot}
+              stack={r.stack}
+            />
+          </div>
+        ))}
+      </section>
     </div>
   );
 }
