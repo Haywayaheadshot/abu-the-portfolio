@@ -8,6 +8,7 @@ import './styles/App.css';
 import Footer from './pages/Footer';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
+import Services from './pages/Services';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route exact path="/contact" element={<Contact />} />
             <Route exact path="/projects" element={<Projects />} />
             <Route exact path="/skills" element={<Skills />} />
+            <Route exact path="/services" element={<Services />} />
           </Routes>
           <HamburgerPop />
         </main>
