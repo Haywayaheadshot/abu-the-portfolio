@@ -28,7 +28,9 @@ function Contact() {
             <textarea type="text area" placeholder="Message" id="message" />
           </label>
           <section className="contact-submit-btn-div">
-            <input className="contact-submit-btn" type="submit" />
+            <button className="contact-submit-btn" name="submit" type="submit">
+              Submit
+            </button>
           </section>
         </form>
         {/* <LocationMap /> */}
