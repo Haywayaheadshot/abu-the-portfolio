@@ -25,7 +25,7 @@ function Portfolio() {
           Below are some of the projects I have worked on.
         </h4>
       </section>
-      <select className="select-projs" onChange={handleSelectChange}>
+      <select className="select-projs" onChange={handleSelectChange} data-testid="select-projs">
         <option value="">All Projects</option>
         <option value="Front-End">Front-End Projects</option>
         <option value="Back-End">Back-End Projects</option>
@@ -33,18 +33,19 @@ function Portfolio() {
       </select>
       <section className="projects-display">
         {filteredRepo.map((r) => (
-          <Project
-            key={r.id}
-            id={r.id}
-            title={r.title}
-            mobileSrc={r.mobileScreenShot}
-            description={r.description}
-            builtWith={r.builtWith}
-            liveDemo={r.liveDemo}
-            sourceCode={r.sourceCode}
-            deskScreenShot={r.deskScreenShot}
-            stack={r.stack}
-          />
+          <div key={r.id} data-testid="project">
+            <Project
+              id={r.id}
+              title={r.title}
+              mobileSrc={r.mobileScreenShot}
+              description={r.description}
+              builtWith={r.builtWith}
+              liveDemo={r.liveDemo}
+              sourceCode={r.sourceCode}
+              deskScreenShot={r.deskScreenShot}
+              stack={r.stack}
+            />
+          </div>
         ))}
       </section>
     </div>

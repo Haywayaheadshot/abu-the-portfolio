@@ -10,31 +10,31 @@ function Home() {
   return (
     <div className="home-container">
       <section className="home-header-div">
-        <ul className="home-icons">
+        <ul className="home-icons" data-testid="social-media-icons">
           <IconContext.Provider value={{ size: '1em', className: 'global-class-name', color: 'hsl(0, 0%, 100%)' }}>
-            <l1>
+            <li>
               <a href="https://github.com/Haywayaheadshot" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
               </a>
-            </l1>
-            <l1>
+            </li>
+            <li>
               <a href="https://www.linkedin.com/in/abubakar-ummar/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedinIn />
               </a>
-            </l1>
-            <l1>
+            </li>
+            <li>
               <a href="https://twitter.com/haywayalive" target="_blank" rel="noopener noreferrer">
                 <FaTwitter />
               </a>
-            </l1>
-            <l1>
+            </li>
+            <li>
               <a href="https://www.instagram.com/haywayaofficial/?next=%2Fhaywayaofficial%2F&hl=en" target="_blank" rel="noopener noreferrer">
                 <FaInstagram />
               </a>
-            </l1>
+            </li>
           </IconContext.Provider>
         </ul>
-        <div className="abu-image" />
+        <div className="abu-image for-phone" />
       </section>
       <section className="landing-page-header">
         {/* <img src={desktop} alt="Monitor and keyboard" className="desktop-computer" /> */}

@@ -3,8 +3,8 @@ import '../styles/about.css';
 
 function About() {
   return (
-    <div className="about-container">
-      <p className="about-container-par">
+    <div className="about-container" data-testid="about-container">
+      <p className="about-container-par" data-testid="about-container-par">
         Hi! My name is Abubakar Ummar, and I&apos;m a full-stack
         development student enrolled at Microverse.
         A software development school that provides a

@@ -54,6 +54,12 @@ function NavBar() {
             <NavLink to="/projects" onClick={() => toggleMenu(false)}>
               <li className="hamburger-ul-li">Projects</li>
             </NavLink>
+            <NavLink to="/skills" onClick={() => toggleMenu(false)}>
+              <li className="hamburger-ul-li">Skills</li>
+            </NavLink>
+            <NavLink to="/services" onClick={() => toggleMenu(false)}>
+              <li className="hamburger-ul-li">Services</li>
+            </NavLink>
           </ul>
         ) : null}
       </section>
@@ -72,6 +78,16 @@ function NavBar() {
           <li className="desk-ul-li">
             <NavLink to="/projects">
               Projects
+            </NavLink>
+          </li>
+          <li className="desk-ul-li">
+            <NavLink to="/skills">
+              Skills
+            </NavLink>
+          </li>
+          <li className="desk-ul-li">
+            <NavLink to="/services">
+              Services
             </NavLink>
           </li>
         </ul>
