@@ -71,7 +71,7 @@ const defaultState = [
     id: uuidv4(),
     title: 'Tools and Methods',
     skillArray: [{
-      skill: 'Mobile/Responsive Development',
+      skill: 'Responsive Development',
       level: 'Advanced',
     },
     {

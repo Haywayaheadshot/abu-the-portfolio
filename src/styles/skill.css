@@ -3,9 +3,28 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    min-width: 30vw;
+    padding: 10px;
+}
+
+.skill-container-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 40vw;
+    /* max-height: 50vh; */
+    padding: 0 40px;
 }
 
 .skill-list-container {
     display: grid;
     grid-template-columns: auto auto;
+    /* max-width: 50vw; */
+    padding: 0 40px;
+    gap: 10px;
 }
+
+/* .skill-ul-li {
+    mi-width: 50vw;
+} */

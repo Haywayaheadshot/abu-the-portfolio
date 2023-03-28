@@ -6,7 +6,7 @@ function Skill({
   title, skillArray,
 }) {
   return (
-    <ul className="proj-ul">
+    <ul className="skill-container-ul">
       <li>
         <h1>
           {title}
@@ -15,7 +15,7 @@ function Skill({
       <li className="skill-list-container">
         {skillArray.map((skill) => (
           <ul className="skill-ul" key={skill.id}>
-            <li>
+            <li className="skill-ul-li">
               <h2>
                 {skill.skill}
                 <br />

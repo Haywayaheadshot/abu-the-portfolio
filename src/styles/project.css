@@ -17,7 +17,13 @@
 .proj-ul p,
 .proj-ul h3,
 .proj-ul h4,
-.proj-ul h5 {
+.proj-ul h5,
+.skill-container-ul h1,
+.skill-container-ul h2,
+.skill-container-ul p,
+.skill-container-ul h3,
+.skill-container-ul h4,
+.skill-container-ul h5 {
   color: hsl(0, 0%, 100%);
   text-align: center;
 }
