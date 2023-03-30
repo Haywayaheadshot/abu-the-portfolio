@@ -197,6 +197,11 @@ ul {
   display: none;
 }
 
+.dark .home-container {
+  background-color: black;
+  color: white;
+}
+
 @media (min-width: 745px) {
   .for-phone {
     display: none;

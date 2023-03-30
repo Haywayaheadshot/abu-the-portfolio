@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useEffect } from 'react';
 import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -9,13 +10,27 @@ import Footer from './pages/Footer';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import Services from './pages/Services';
+import useDarkMode from './components/dep/DarkMode';
 
 function App() {
+  const [isDarkMode, toggleDarkMode] = useDarkMode();
+
+  useEffect(() => {
+    document.body.classList.toggle('dark', isDarkMode);
+  }, [isDarkMode]);
+
   return (
     <Router>
       <div className="App">
         <header>
           <NavBar />
+          <div className={isDarkMode ? 'dark' : ''}>
+            <button type="button" onClick={toggleDarkMode}>
+              {isDarkMode ? 'Disable' : 'Enable'}
+              {' '}
+              Dark Mode
+            </button>
+          </div>
         </header>
         <main>
           <Routes>

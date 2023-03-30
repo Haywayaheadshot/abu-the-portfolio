@@ -60,6 +60,11 @@ function NavBar() {
             <NavLink to="/services" onClick={() => toggleMenu(false)}>
               <li className="hamburger-ul-li">Services</li>
             </NavLink>
+            <li className="hamburger-ul-li">
+              <h4>
+                Dark Mode
+              </h4>
+            </li>
           </ul>
         ) : null}
       </section>
