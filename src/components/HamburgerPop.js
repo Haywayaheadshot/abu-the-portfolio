@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import '../styles/hamburger-pop.css';
 
-function HamburgerPop() {
+const HamburgerPop = () => {
   useEffect(() => {
     const buttonsContainer = document.querySelector('.btn-container');
 
@@ -55,6 +55,6 @@ function HamburgerPop() {
       </div>
     </section>
   );
-}
+};
 
 export default HamburgerPop;

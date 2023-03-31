@@ -6,7 +6,7 @@ import '../styles/nav-bar.css';
 import { NavLink } from 'react-router-dom';
 import useDarkMode from './dep/DarkMode';
 
-function NavBar() {
+const NavBar = () => {
   const [open, setOpen] = useState(false);
   const footerAnime = document.querySelector('.bar');
   const [isDarkMode, toggleDarkMode] = useDarkMode();
@@ -120,6 +120,6 @@ function NavBar() {
       </section>
     </div>
   );
-}
+};
 
 export default NavBar;
