@@ -6,7 +6,9 @@ import {
 } from 'react-icons/fa';
 // import desktop from '../components/assets/images/desktop-computer.png';
 
-function Home() {
+const Home = () => {
+  const h = 'x';
+  console.log(h);
   return (
     <div className="home-container">
       <section className="home-header-div">
@@ -50,6 +52,6 @@ function Home() {
       </section>
     </div>
   );
-}
+};
 
 export default Home;

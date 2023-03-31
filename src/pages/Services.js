@@ -1,9 +1,19 @@
 import React from 'react';
+// import
 
-function Services() {
+const Services = () => {
+  const service = 'x';
+  console.log(service);
   return (
-    <div>Services</div>
+    <div className="services-container">
+      <section>
+        <h1>Services</h1>
+        <h4>What I offer</h4>
+      </section>
+      {/* // <section>
+      // </section> */}
+    </div>
   );
-}
+};
 
 export default Services;

@@ -17,7 +17,9 @@ import React from 'react';
 // } from 'react-icons/si';
 import '../styles/footer.css';
 
-function Footer() {
+const Footer = () => {
+  const f = 'f';
+  console.log(f);
   return (
     <div className="footer-container">
       {/* <section className="footer-logo-section">
@@ -65,6 +67,6 @@ function Footer() {
       </section>
     </div>
   );
-}
+};
 
 export default Footer;

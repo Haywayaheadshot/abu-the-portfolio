@@ -3,7 +3,7 @@ import '../styles/projects.css';
 import { useSelector } from 'react-redux';
 import Project from '../components/dep/Project';
 
-function Portfolio() {
+const Portfolio = () => {
   const repo = useSelector((state) => state.repos);
 
   const [selectedOption, setSelectedOption] = useState('');
@@ -50,6 +50,6 @@ function Portfolio() {
       </section>
     </div>
   );
-}
+};
 
 export default Portfolio;

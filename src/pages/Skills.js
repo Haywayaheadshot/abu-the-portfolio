@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import Skill from '../components/dep/Skill';
 import '../styles/skills.css';
 
-function Skills() {
+const Skills = () => {
   const skill = useSelector((state) => state.skills);
   return (
     <div className="skills-container">
@@ -20,6 +20,6 @@ function Skills() {
       </section>
     </div>
   );
-}
+};
 
 export default Skills;

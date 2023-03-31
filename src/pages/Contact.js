@@ -4,7 +4,9 @@ import React from 'react';
 // import LocationMap from '../components/dep/LocationMap';
 import '../styles/contact.css';
 
-function Contact() {
+const Contact = () => {
+  const con = 'c';
+  console.log(con);
   return (
     <div className="contact-container">
       <h1 className="contact-header">Contact Me</h1>
@@ -37,6 +39,6 @@ function Contact() {
       </section>
     </div>
   );
-}
+};
 
 export default Contact;
