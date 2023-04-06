@@ -26,8 +26,7 @@
   color: hsl(0, 0%, 100%);
 }
 
-.projects-display,
-.skills-display {
+.projects-display {
   max-height: 80vh;
   overflow-x: scroll;
   scroll-padding: 24px;
