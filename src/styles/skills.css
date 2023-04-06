@@ -27,6 +27,11 @@
   gap: 50px;
 }
 
+.skill {
+  max-width: 40vw;
+  min-height: 70vh;
+}
+
 @media (min-width: 1182px) {
   /* .skills-display {
     display: grid;

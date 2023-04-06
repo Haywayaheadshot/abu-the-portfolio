@@ -10,7 +10,7 @@ const Skills = () => {
       <h1 className="skills-container-h1">Skills</h1>
       <section className="skills-display">
         {skill.map((s) => (
-          <div key={s.id} data-testid="skill">
+          <div key={s.id} data-testid="skill" className="skill">
             <Skill
               title={s.title}
               skillArray={s.skillArray}
