@@ -1,0 +1,32 @@
+.services-container {
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.mapped-services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 80%;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-div {
+    border: 1px solid hsl(0, 0%, 100%);
+    padding: 10px 20px;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 10px;
+}
+
+.service-div button {
+    background: none;
+    border: none;
+    color: hsl(0, 0%, 100%);
+}
