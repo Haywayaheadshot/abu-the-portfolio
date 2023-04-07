@@ -22,8 +22,8 @@ const About = () => (
       Completely immersed in development while working on a
       number of projects,
       including a react calculator using JavaScript, React,
-      and Redux over the last 4 months.
-      While at Microverse, I am spending 8 hours per day working
+      and Redux.
+      While at Microverse, I am spent 8 hours per day working
       remotely with developers from 10+ different time zones,
       where I am ensuring 100% on-time project completion.
       I am passionate about building user-friendly websites and
