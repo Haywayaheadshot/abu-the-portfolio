@@ -17,12 +17,9 @@ import React from 'react';
 // } from 'react-icons/si';
 import '../styles/footer.css';
 
-const Footer = () => {
-  const f = 'f';
-  console.log(f);
-  return (
-    <div className="footer-container">
-      {/* <section className="footer-logo-section">
+const Footer = () => (
+  <div className="footer-container">
+    {/* <section className="footer-logo-section">
         <h1 className="cartoonish-font">Abubakar Ummar</h1>
         <ul className="foot-logo-sec-ul">
           <li>
@@ -60,13 +57,12 @@ const Footer = () => {
           <l1><FaInstagram /></l1>
         </ul>
       </section> */}
-      <section className="bar-ball-container">
-        <div className="bar">
-          <section className="ball" />
-        </div>
-      </section>
-    </div>
-  );
-};
+    <section className="bar-ball-container">
+      <div className="bar">
+        <section className="ball" />
+      </div>
+    </section>
+  </div>
+);
 
 export default Footer;
