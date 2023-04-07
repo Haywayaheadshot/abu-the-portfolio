@@ -1,7 +1,4 @@
 import React from 'react';
-// import Blobs from '../components/dep/Blobs';
-// import blood from '../components/assets/images/blood.png';
-// import LocationMap from '../components/dep/LocationMap';
 import '../styles/contact.css';
 
 const Contact = () => (
@@ -32,7 +29,6 @@ const Contact = () => (
           </button>
         </section>
       </form>
-      {/* <LocationMap /> */}
     </section>
   </div>
 );

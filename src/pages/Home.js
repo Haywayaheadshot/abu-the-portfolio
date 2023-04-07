@@ -4,7 +4,6 @@ import { IconContext } from 'react-icons';
 import {
   FaGithub, FaInstagram, FaLinkedinIn, FaTwitter,
 } from 'react-icons/fa';
-// import desktop from '../components/assets/images/desktop-computer.png';
 
 const Home = () => (
   <div className="home-container">
@@ -36,7 +35,6 @@ const Home = () => (
       <div className="abu-image for-phone" />
     </section>
     <section className="landing-page-header">
-      {/* <img src={desktop} alt="Monitor and keyboard" className="desktop-computer" /> */}
       <h1 className="landing-page-name">ABUBAKAR UMMAR</h1>
     </section>
     <section className="par-section">
