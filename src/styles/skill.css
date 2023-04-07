@@ -14,7 +14,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 70vw;
+  min-width: 70vw;
 
   /* max-height: 50vh; */
   border: 1px solid hsl(0, 0%, 100%);

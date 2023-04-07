@@ -7,11 +7,11 @@
 .skills-display {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding-bottom: 10vh;
+  padding: 0 5vw 2vh 5vw;
 }
 
 .level-span {
@@ -28,14 +28,12 @@
 }
 
 .skill {
-  max-width: 40vw;
+  /* max-width: 40vw; */
   min-height: 70vh;
 }
 
-@media (min-width: 1182px) {
-  /* .skills-display {
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: 10px 40px;
-  } */
+@media (min-width: 745px) {
+  .skills-display {
+    padding: 0 30vw 5vh 30vw;
+  }
 }

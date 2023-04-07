@@ -9,10 +9,6 @@ const Services = () => {
 
   const getIconComponent = (iconName) => {
     const IconComponent = FaIcons[iconName] || SiIcons[iconName];
-    if (!IconComponent) {
-      // eslint-disable-next-line no-console
-      console.warn(`Invalid icon name: ${iconName}`);
-    }
     return IconComponent;
   };
 
