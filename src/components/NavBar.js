@@ -1,11 +1,19 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Squeeze as Hamburger } from 'hamburger-react';
+import { BsFillSunFill, BsMoon } from 'react-icons/bs';
+import { IconContext } from 'react-icons';
 import '../styles/nav-bar.css';
 import { NavLink } from 'react-router-dom';
+import useDarkMode from './dep/DarkMode';
 
-function NavBar() {
+const NavBar = () => {
   const [open, setOpen] = useState(false);
   const footerAnime = document.querySelector('.bar');
+  const [isDarkMode, toggleDarkMode] = useDarkMode();
+
+  useEffect(() => {
+    document.body.classList.toggle('dark', isDarkMode);
+  }, [isDarkMode]);
 
   const toggleMenu = () => {
     setOpen(!open);
@@ -60,6 +68,15 @@ function NavBar() {
             <NavLink to="/services" onClick={() => toggleMenu(false)}>
               <li className="hamburger-ul-li">Services</li>
             </NavLink>
+            <li>
+              <div className={isDarkMode ? 'dark' : ''}>
+                <button type="button" onClick={toggleDarkMode}>
+                  <IconContext.Provider value={{ size: '3em', className: 'global-class-name darkmode-btn', color: 'black' }}>
+                    {isDarkMode ? <BsFillSunFill /> : <BsMoon />}
+                  </IconContext.Provider>
+                </button>
+              </div>
+            </li>
           </ul>
         ) : null}
       </section>
@@ -90,10 +107,19 @@ function NavBar() {
               Services
             </NavLink>
           </li>
+          <li>
+            <div className={isDarkMode ? 'dark' : ''}>
+              <button type="button" onClick={toggleDarkMode}>
+                <IconContext.Provider value={{ size: '1em', className: 'global-class-name darkmode-btn', color: 'black' }}>
+                  {isDarkMode ? <BsFillSunFill /> : <BsMoon />}
+                </IconContext.Provider>
+              </button>
+            </div>
+          </li>
         </ul>
       </section>
     </div>
   );
-}
+};
 
 export default NavBar;

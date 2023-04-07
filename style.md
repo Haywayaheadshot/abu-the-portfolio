@@ -11,3 +11,46 @@ White: hsl(0, 0%, 100%)
 ### 1. Cartoonish
 font-family: 'Amatic SC', cursive;
 https://fonts.google.com/specimen/Amatic+SC
+
+
+
+# Footer unused code
+
+    {/* <section className="footer-logo-section">
+        <h1 className="cartoonish-font">Abubakar Ummar</h1>
+        <ul className="foot-logo-sec-ul">
+          <li>
+            <FaHome />
+            : Home
+          </li>
+          <li>
+            <AiFillProfile />
+            : Projects
+          </li>
+          <li>
+            <AiOutlineContacts />
+            : Contact
+          </li>
+          <li>
+            <GiSkills />
+            : Skills
+          </li>
+          <li>
+            <MdElectricalServices />
+            : Services
+          </li>
+          <li>
+            <SiAboutdotme />
+            : About
+          </li>
+        </ul>
+      </section>
+      <section className="footer-social-media-section">
+        <h1>Follow Me On</h1>
+        <ul className="footer-social-media-ul">
+          <l1><FaGithub /></l1>
+          <l1><FaFacebook /></l1>
+          <l1><FaTwitter /></l1>
+          <l1><FaInstagram /></l1>
+        </ul>
+      </section> */}

@@ -4,16 +4,15 @@ This a project that displays my projects and brief about Abubakar Ummar as a sof
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Setup](#setup)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [My Portfolio](#my-portfolio)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [To run tests](#to-run-tests)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -61,6 +60,10 @@ Users should be able to:
 - Access `cd abu-the-portfolio`
 - npm install
 - npm start
+
+### To run tests
+
+- run `npm test`
 
 ## Author
 

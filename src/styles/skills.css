@@ -4,6 +4,16 @@
     min-width: 70vw;
 } */
 
+.skills-display {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 10vh;
+}
+
 .level-span {
   font-size: 1rem;
 }
@@ -17,10 +27,15 @@
   gap: 50px;
 }
 
+.skill {
+  max-width: 40vw;
+  min-height: 70vh;
+}
+
 @media (min-width: 1182px) {
-  .skills-display {
+  /* .skills-display {
     display: grid;
     grid-template-columns: auto auto;
     padding: 10px 40px;
-  }
+  } */
 }
