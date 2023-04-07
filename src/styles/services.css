@@ -20,8 +20,9 @@
 .service-div {
   border: 1px solid hsl(0, 0%, 100%);
   padding: 10px 20px;
-  width: 20vw;
-  height: 20vh;
+  min-width: 20vw;
+
+  /* height: 20vh; */
   border-radius: 10px;
 }
 
