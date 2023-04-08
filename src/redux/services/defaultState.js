@@ -1,5 +1,4 @@
 import { v4 as uuidv4 } from 'uuid';
-// import { FaReact } from 'react-icons/fa';
 
 const defaultState = [
   {

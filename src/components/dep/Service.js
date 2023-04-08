@@ -2,10 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 import { GoEyeClosed } from 'react-icons/go';
+import '../../styles/service.css';
 
-function Details({ service, closeModal }) {
+function Service({ service, closeModal }) {
   return (
-    <div>
+    <div className="service-container" key={service.id}>
       <nav>
         <GoEyeClosed
           onClick={closeModal}
@@ -32,11 +33,12 @@ function Details({ service, closeModal }) {
   );
 }
 
-export default Details;
+export default Service;
 
-Details.propTypes = {
+Service.propTypes = {
   service: PropTypes.shape({
     name: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
     offers: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
   closeModal: PropTypes.func.isRequired,
