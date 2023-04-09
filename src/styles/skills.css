@@ -29,11 +29,22 @@
 
 .skill {
   /* max-width: 40vw; */
-  min-height: 70vh;
+
+  /* min-height: 70vh; */
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 20px;
+  padding: 20px;
 }
 
 @media (min-width: 745px) {
   .skills-display {
-    padding: 0 30vw 5vh 30vw;
+    flex-direction: row;
+    padding: 0 8vw 5vh 8vw;
+  }
+
+  .skill {
+    max-width: 30vw;
+
+    /* min-height: 70vh; */
   }
 }

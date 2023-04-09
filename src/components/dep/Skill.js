@@ -7,31 +7,35 @@ import '../../styles/skill.css';
 const Skill = ({
   title, skillArray,
 }) => (
-  <ul className="skill-container-ul">
-    <li>
-      <h1 className="skill-header">
-        {title}
-      </h1>
-    </li>
-    <li className="skill-list-container">
+  <div className="skill-container-ul">
+    <h1 className="skill-header">
+      {title}
+    </h1>
+    <section className="skill-list-container">
       {skillArray.map((skill) => (
-        <div key={skill.id} className="skill-section">
-          <section>
-            <IconContext.Provider value={{ size: '1.5em', className: 'global-class-name', color: 'hsl(0, 0%, 100%)' }}>
-              <BsPatchCheck />
-            </IconContext.Provider>
-          </section>
-          <h2 className="skill-ul">
-            {skill.skill}
-            <br />
-            <span className="level-span">
-              {skill.level}
-            </span>
-          </h2>
-        </div>
+        <table key={skill.id}>
+          <tbody>
+            <tr className="skill-section" id="skill-section">
+              <td>
+                <IconContext.Provider value={{ size: '1.5em', className: 'global-class-name', color: 'hsl(0, 0%, 100%)' }}>
+                  <BsPatchCheck />
+                </IconContext.Provider>
+              </td>
+              <td>
+                <p>
+                  {skill.skill}
+                  <br />
+                  <span className="level-span">
+                    {skill.level}
+                  </span>
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       ))}
-    </li>
-  </ul>
+    </section>
+  </div>
 );
 
 export default Skill;

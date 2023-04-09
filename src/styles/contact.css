@@ -46,6 +46,9 @@
   gap: 100px;
 }
 
-/* .blob-contact {
-  min-width: 100vw;
-} */
+.contact-error-message {
+  border: 1px dotted red;
+  font-size: 0.8em;
+  color: hsl(0, 0%, 100%);
+  padding: 10px 5px;
+}

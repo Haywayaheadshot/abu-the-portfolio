@@ -28,9 +28,9 @@
 
 .projects-display {
   max-height: 80vh;
-  overflow-x: scroll;
+  overflow-y: scroll;
   scroll-padding: 24px;
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: y mandatory;
   display: flex;
   flex-direction: column;
   align-items: center;
