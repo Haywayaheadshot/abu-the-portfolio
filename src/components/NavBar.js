@@ -8,8 +8,9 @@ import useDarkMode from './dep/DarkMode';
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
-  const footerAnime = document.querySelector('.bar');
   const [isDarkMode, toggleDarkMode] = useDarkMode();
+  const body = document.getElementById('body');
+  const footerAnime = document.getElementById('bar-ball-container');
 
   useEffect(() => {
     document.body.classList.toggle('dark', isDarkMode);
@@ -17,15 +18,11 @@ const NavBar = () => {
 
   const toggleMenu = () => {
     setOpen(!open);
-    const body = document.getElementById('body');
-    // const popBg = document.querySelector('.hamburger-pop-bg');
     if (!open) {
       body.classList.add('open');
-      // popBg.style.display = 'block';
       footerAnime.style.display = 'none';
     } else {
       body.classList.remove('open');
-      // popBg.style.display = 'none';
       footerAnime.style.display = 'flex';
     }
   };
