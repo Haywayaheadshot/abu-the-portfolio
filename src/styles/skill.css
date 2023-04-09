@@ -24,10 +24,10 @@
 
 .skill-list-container {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  /* align-items: center; */
 
   /* display: grid; */
 

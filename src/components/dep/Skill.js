@@ -13,20 +13,26 @@ const Skill = ({
     </h1>
     <section className="skill-list-container">
       {skillArray.map((skill) => (
-        <div key={skill.id} className="skill-section" id="skill-section">
-          <span>
-            <IconContext.Provider value={{ size: '1.5em', className: 'global-class-name', color: 'hsl(0, 0%, 100%)' }}>
-              <BsPatchCheck />
-            </IconContext.Provider>
-          </span>
-          <p>
-            {skill.skill}
-            <br />
-            <span className="level-span">
-              {skill.level}
-            </span>
-          </p>
-        </div>
+        <table key={skill.id}>
+          <tbody>
+            <tr className="skill-section" id="skill-section">
+              <td>
+                <IconContext.Provider value={{ size: '1.5em', className: 'global-class-name', color: 'hsl(0, 0%, 100%)' }}>
+                  <BsPatchCheck />
+                </IconContext.Provider>
+              </td>
+              <td>
+                <p>
+                  {skill.skill}
+                  <br />
+                  <span className="level-span">
+                    {skill.level}
+                  </span>
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       ))}
     </section>
   </div>

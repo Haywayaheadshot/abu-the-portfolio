@@ -9,6 +9,8 @@ const Services = () => {
   const services = useSelector((state) => state.services);
   const [showModal, setShowModal] = useState(false);
   const [selectedService, setSelectedService] = useState(null);
+  const body = document.getElementById('body');
+  const movingBall = document.getElementById('bar-ball-container');
 
   const getIconComponent = (iconName) => {
     const IconComponent = FaIcons[iconName] || SiIcons[iconName];
@@ -18,12 +20,14 @@ const Services = () => {
   const handleShowDetails = (service) => {
     setSelectedService(service);
     setShowModal(true);
-    // body.classList.add('open');
+    body.classList.add('open');
+    movingBall.style.display = 'none';
   };
 
   const handleCloseModal = () => {
     setShowModal(false);
-    // body.classList.remove('open');
+    body.classList.remove('open');
+    movingBall.style.display = 'flex';
   };
 
   return (
