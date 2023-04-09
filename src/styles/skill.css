@@ -3,10 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   min-width: 20vw;
-
- padding: 0 10px;
+  padding: 0 10px;
 }
 
 /* .skill-container-ul {
@@ -24,9 +22,11 @@
 
 .skill-list-container {
   display: flex;
+
   /* flex-direction: row; */
   flex-wrap: wrap;
   justify-content: space-around;
+
   /* align-items: center; */
 
   /* display: grid; */
@@ -53,7 +53,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  min-width: 10vw
+  min-width: 10vw;
 }
 
 #skill-section > p {

@@ -29,6 +29,7 @@
 
 .skill {
   /* max-width: 40vw; */
+
   /* min-height: 70vh; */
   border: 1px solid hsl(0, 0%, 100%);
   border-radius: 20px;
@@ -43,6 +44,7 @@
 
   .skill {
     max-width: 30vw;
+
     /* min-height: 70vh; */
   }
 }
