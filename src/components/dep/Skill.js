@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import { BsPatchCheck } from 'react-icons/bs';
 import { IconContext } from 'react-icons';
+
 import '../../styles/skill.css';
 
 const Skill = ({

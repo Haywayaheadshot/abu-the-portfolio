@@ -1,29 +1,33 @@
-import React, { useEffect, useState } from 'react';
-import { Squeeze as Hamburger } from 'hamburger-react';
-import { BsFillSunFill, BsMoon } from 'react-icons/bs';
-import { IconContext } from 'react-icons';
-import '../styles/nav-bar.css';
-import { NavLink } from 'react-router-dom';
-import useDarkMode from './dep/DarkMode';
+import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
+
+import { BsFillSunFill, BsMoon } from "react-icons/bs";
+import { IconContext } from "react-icons";
+import { Squeeze as Hamburger } from "hamburger-react";
+
+import "../styles/nav-bar.css";
+
+import useDarkMode from "./dep/DarkMode";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
   const [isDarkMode, toggleDarkMode] = useDarkMode();
-  const body = document.getElementById('body');
-  const footerAnime = document.getElementById('bar-ball-container');
+
+  const body = document.getElementById("body");
+  const footerAnime = document.getElementById("bar-ball-container");
 
   useEffect(() => {
-    document.body.classList.toggle('dark', isDarkMode);
+    document.body.classList.toggle("dark", isDarkMode);
   }, [isDarkMode]);
 
   const toggleMenu = () => {
     setOpen(!open);
     if (!open) {
-      body.classList.add('open');
-      footerAnime.style.display = 'none';
+      body.classList.add("open");
+      footerAnime.style.display = "none";
     } else {
-      body.classList.remove('open');
-      footerAnime.style.display = 'flex';
+      body.classList.remove("open");
+      footerAnime.style.display = "flex";
     }
   };
 
@@ -33,7 +37,7 @@ const NavBar = () => {
         to="/"
         onClick={() => {
           setOpen(false);
-          footerAnime.style.display = 'flex';
+          footerAnime.style.display = "flex";
         }}
       >
         <h1 className="logo cartoonish-font">Abubakar Ummar</h1>
@@ -66,9 +70,15 @@ const NavBar = () => {
               <li className="hamburger-ul-li">Services</li>
             </NavLink>
             <li>
-              <div className={isDarkMode ? 'dark' : ''}>
+              <div className={isDarkMode ? "dark" : ""}>
                 <button type="button" onClick={toggleDarkMode}>
-                  <IconContext.Provider value={{ size: '3em', className: 'global-class-name darkmode-btn', color: 'black' }}>
+                  <IconContext.Provider
+                    value={{
+                      size: "3em",
+                      className: "global-class-name darkmode-btn",
+                      color: "black",
+                    }}
+                  >
                     {isDarkMode ? <BsFillSunFill /> : <BsMoon />}
                   </IconContext.Provider>
                 </button>
@@ -80,34 +90,30 @@ const NavBar = () => {
       <section className="for-desk">
         <ul className="desk-ul">
           <li className="desk-ul-li">
-            <NavLink to="/about">
-              About
-            </NavLink>
+            <NavLink to="/about">About</NavLink>
           </li>
           <li className="desk-ul-li">
-            <NavLink to="/contact">
-              Contact
-            </NavLink>
+            <NavLink to="/contact">Contact</NavLink>
           </li>
           <li className="desk-ul-li">
-            <NavLink to="/projects">
-              Projects
-            </NavLink>
+            <NavLink to="/projects">Projects</NavLink>
           </li>
           <li className="desk-ul-li">
-            <NavLink to="/skills">
-              Skills
-            </NavLink>
+            <NavLink to="/skills">Skills</NavLink>
           </li>
           <li className="desk-ul-li">
-            <NavLink to="/services">
-              Services
-            </NavLink>
+            <NavLink to="/services">Services</NavLink>
           </li>
           <li>
-            <div className={isDarkMode ? 'dark' : ''}>
+            <div className={isDarkMode ? "dark" : ""}>
               <button type="button" onClick={toggleDarkMode}>
-                <IconContext.Provider value={{ size: '1em', className: 'global-class-name darkmode-btn', color: 'black' }}>
+                <IconContext.Provider
+                  value={{
+                    size: "1em",
+                    className: "global-class-name darkmode-btn",
+                    color: "black",
+                  }}
+                >
                   {isDarkMode ? <BsFillSunFill /> : <BsMoon />}
                 </IconContext.Provider>
               </button>

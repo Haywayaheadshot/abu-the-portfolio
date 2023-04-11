@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
-import '../styles/projects.css';
-import { useSelector } from 'react-redux';
-import Project from '../components/dep/Project';
+import React, { useState } from "react";
+import { useSelector } from "react-redux";
+
+import "../styles/projects.css";
+
+import Project from "../components/dep/Project";
 
 const Portfolio = () => {
   const repo = useSelector((state) => state.repos);
 
-  const [selectedOption, setSelectedOption] = useState('');
+  const [selectedOption, setSelectedOption] = useState("");
 
   const handleSelectChange = (event) => {
     const selectedValue = event.target.value;
@@ -25,7 +27,11 @@ const Portfolio = () => {
           Below are some of the projects I have worked on.
         </h4>
       </section>
-      <select className="select-projs" onChange={handleSelectChange} data-testid="select-projs">
+      <select
+        className="select-projs"
+        onChange={handleSelectChange}
+        data-testid="select-projs"
+      >
         <option value="">All Projects</option>
         <option value="Front-End">Front-End Projects</option>
         <option value="Back-End">Back-End Projects</option>

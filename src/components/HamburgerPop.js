@@ -1,37 +1,36 @@
-import React, { useEffect } from 'react';
-import '../styles/hamburger-pop.css';
+import React, { useEffect } from "react";
+
+import "../styles/hamburger-pop.css";
 
 const HamburgerPop = () => {
   useEffect(() => {
-    const buttonsContainer = document.querySelector('.btn-container');
+    const buttonsContainer = document.querySelector(".btn-container");
 
     function click(e) {
       const el = e.target;
 
       if (el !== e.currentTarget) {
-        if (el.nodeName === 'BUTTON') {
-          if (el.classList.contains('is-active')) {
-            el.classList.remove('is-active');
+        if (el.nodeName === "BUTTON") {
+          if (el.classList.contains("is-active")) {
+            el.classList.remove("is-active");
           } else {
-            el.classList.add('is-active');
+            el.classList.add("is-active");
           }
         }
       }
       e.stopPropagation();
     }
 
-    buttonsContainer.addEventListener('click', click);
+    buttonsContainer.addEventListener("click", click);
 
     return () => {
-      buttonsContainer.removeEventListener('click', click);
+      buttonsContainer.removeEventListener("click", click);
     };
   }, []);
   return (
     <section className="hamburger-pop-bg">
       <p>
-        <strong>Click</strong>
-        {' '}
-        a button to activate its animation.
+        <strong>Click</strong> a button to activate its animation.
       </p>
       <div className="btn-container">
         <button type="button" className="btn btn--shockwave is-active">

@@ -1,16 +1,21 @@
-import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
-import * as FaIcons from 'react-icons/fa';
-import * as SiIcons from 'react-icons/si';
-import Service from '../components/dep/Service';
-import '../styles/services.css';
+import React, { useState } from "react";
+import { useSelector } from "react-redux";
+
+import * as FaIcons from "react-icons/fa";
+import * as SiIcons from "react-icons/si";
+
+import "../styles/services.css";
+
+import Service from "../components/dep/Service";
 
 const Services = () => {
   const services = useSelector((state) => state.services);
+
   const [showModal, setShowModal] = useState(false);
   const [selectedService, setSelectedService] = useState(null);
-  const body = document.getElementById('body');
-  const movingBall = document.getElementById('bar-ball-container');
+
+  const body = document.getElementById("body");
+  const movingBall = document.getElementById("bar-ball-container");
 
   const getIconComponent = (iconName) => {
     const IconComponent = FaIcons[iconName] || SiIcons[iconName];
@@ -20,14 +25,14 @@ const Services = () => {
   const handleShowDetails = (service) => {
     setSelectedService(service);
     setShowModal(true);
-    body.classList.add('open');
-    movingBall.style.display = 'none';
+    body.classList.add("open");
+    movingBall.style.display = "none";
   };
 
   const handleCloseModal = () => {
     setShowModal(false);
-    body.classList.remove('open');
-    movingBall.style.display = 'flex';
+    body.classList.remove("open");
+    movingBall.style.display = "flex";
   };
 
   return (
@@ -50,7 +55,7 @@ const Services = () => {
           );
         })}
       </section>
-      { showModal && (
+      {showModal && (
         <div className="">
           <div className="">
             <Service service={selectedService} closeModal={handleCloseModal} />

@@ -1,5 +1,6 @@
-import React from 'react';
-import '../styles/typing-char.css';
+import React from "react";
+
+import "../styles/typing-char.css";
 
 const TypingChar = () => (
   <div className="typing-char-container">
