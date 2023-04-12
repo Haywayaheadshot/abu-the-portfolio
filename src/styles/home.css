@@ -63,10 +63,10 @@
 }
 
 .landing-page-header {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: flex-start; */
+  /* align-items: center; */
   gap: 10px;
   padding: 0 10vw;
 }
@@ -111,4 +111,34 @@
 .par-section {
   padding: 10px 10vw;
   border-bottom: 1px solid rgb(20, 20, 20);
+}
+
+@media (min-width: 745px) {
+  .home-container {
+    display: flex;
+   flex-direction: row;
+  }
+
+  /* .home-par {
+    font-size: 2em;
+    width: 100%;
+  } */
+
+  .abu-image {
+    min-width: 30vw;
+    min-height: 50vh;
+  }
+
+  .home-sm-icons {
+    font-size: 5em;
+  }
+
+  .landing-page-header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .landing-page-name {
+    font-size: 4em;
+  }
 }
