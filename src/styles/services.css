@@ -35,6 +35,7 @@
   background: none;
   border: none;
   color: hsl(0, 0%, 100%);
+  cursor: pointer;
 }
 
 @media (min-width: 745px) {

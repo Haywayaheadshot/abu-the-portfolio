@@ -10,7 +10,6 @@
 }
 
 .logo {
-  /* background-color: rgb(20,20,20); */
   color: hsl(0, 0%, 100%);
   padding: 5px 10px;
   font-size: 2em;
@@ -18,10 +17,6 @@
   font-weight: 900;
   cursor: pointer;
 }
-
-/* .for-phone {
-  display: block;
-} */
 
 .hamburger-ul {
   position: fixed;
@@ -42,25 +37,13 @@
   color: hsl(0, 0%, 100%);
 }
 
-/* .for-desk {
-  display: none;
-} */
-
 .open {
   overflow-y: hidden;
 }
 
 @media (min-width: 745px) {
-  /* .for-phone {
-    display: none;
-  }
-
-  .for-desk {
-    display: block;
-  } */
-
   .nav-container {
-    padding: 5vh 10vw;
+    padding: 0 10vw;
   }
 
   .desk-ul {
@@ -75,7 +58,24 @@
     padding-left: 10px;
   }
 
+  .desk-ul-li:hover {
+    transition: all 1s ease-in-out 0.25s;
+    -webkit-box-reflect: below 0 linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  }
+
+  .active {
+    border-bottom: 2px solid rgb(43, 33, 30);
+    transition: all 1s ease-in-out 0.25s;
+    border-radius: 0;
+    border-bottom-style: double;
+  }
+
   .desk-ul-li:nth-child(1) {
     border-left: none;
+  }
+
+  .logo:hover {
+    transition: all 1s ease-in-out 0.25s;
+    -webkit-box-reflect: right 100px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
   }
 }
