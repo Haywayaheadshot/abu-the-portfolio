@@ -31,8 +31,8 @@ const Contact = () => {
 
   return (
     <div className="contact-container">
-      <h1 className="contact-header">Contact Me</h1>
       <section className="contact-main">
+        <h1 className="contact-header">Tell Me About Your Project</h1>
         <form className="contact-form" action="https://formspree.io/f/xpznwngg" method="POST" onSubmit={handleFormSubmit}>
           <label htmlFor="name">
             Name
@@ -49,7 +49,7 @@ const Contact = () => {
           {errors.email && <span className="contact-error-message">{errors.email}</span>}
           <br />
           <label htmlFor="message">
-            Message
+            Project
             <br />
             <textarea placeholder="Message" id="message" />
           </label>
@@ -60,6 +60,20 @@ const Contact = () => {
             </button>
           </section>
         </form>
+      </section>
+      <section className="for-desk">
+        <h1>Talk To Me</h1>
+        <ul>
+          <li>
+            Whatsapp
+          </li>
+          <li>
+            Email
+          </li>
+          <li>
+            Linkedin
+          </li>
+        </ul>
       </section>
     </div>
   );
