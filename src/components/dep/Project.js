@@ -44,11 +44,17 @@ const Project = ({
       <p>
         To view live demo, click
         {' '}
-        <a href={liveDemo} target="_blank" rel="noreferrer">here.</a>
+        <a href={liveDemo} target="_blank" rel="noreferrer">
+          <b>HERE</b>
+          .
+        </a>
         <br />
         To see live source code, click
         {' '}
-        <a href={sourceCode} target="_blank" rel="noreferrer">here.</a>
+        <a href={sourceCode} target="_blank" rel="noreferrer">
+          <b>HERE</b>
+          .
+        </a>
       </p>
     </li>
   </ul>
