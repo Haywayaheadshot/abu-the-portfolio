@@ -1,8 +1,3 @@
-/* .home-container {
-  background: linear-gradient(-14deg, rgb(20, 20, 20) 70%, rgb(80, 52, 38) 20%);
-  height: fit-content;
-} */
-
 .home-container h1 {
   color: hsl(0, 0%, 100%);
   margin-top: 0;
@@ -37,17 +32,6 @@
   border: 2px solid rgb(80, 52, 38);
 }
 
-.abu-image-pop {
-  min-width: 50vw;
-  min-height: 20vh;
-  background-image: url('../components/assets/images/abu-smile.jpg');
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  animation: profile_animate 8s ease-in-out 1s infinite;
-  border: 2px solid rgb(80, 52, 38);
-}
-
 @keyframes profile_animate {
   0% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
@@ -63,12 +47,10 @@
 }
 
 .landing-page-header {
-  /* display: flex;
+  display: flex;
   flex-direction: row;
-  justify-content: flex-start; */
-  /* align-items: center; */
-  gap: 10px;
-  padding: 0 10vw;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .desktop-computer {
@@ -102,8 +84,6 @@
 
 .home-par {
   color: hsl(0, 0%, 100%);
-
-  /* margin-bottom: var(--mb-2-5); */
   max-width: none;
   font-size: 1.2em;
 }
@@ -116,29 +96,36 @@
 @media (min-width: 745px) {
   .home-container {
     display: flex;
-   flex-direction: row;
+    flex-direction: row;
+    padding: 50px 5vw;
   }
-
-  /* .home-par {
-    font-size: 2em;
-    width: 100%;
-  } */
 
   .abu-image {
     min-width: 30vw;
     min-height: 50vh;
+    -webkit-box-reflect: below 0 linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
   }
 
   .home-sm-icons {
-    font-size: 5em;
+    font-size: 3em;
   }
 
-  .landing-page-header {
-    display: flex;
-    flex-wrap: wrap;
+  .home-sm-icons:hover {
+    transform: scale(1.5);
+    transition: all 0.5s ease-in-out 0.25s;
   }
 
   .landing-page-name {
-    font-size: 4em;
+    font-size: 2em;
+  }
+
+  .par-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1vh 3vw;
+  }
+
+  .home-par {
+    font-size: 2em;
   }
 }
