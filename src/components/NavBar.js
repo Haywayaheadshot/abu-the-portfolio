@@ -8,6 +8,7 @@ import useDarkMode from './dep/DarkMode';
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
+  const [isActive, setIsActive] = useState(false);
   const [isDarkMode, toggleDarkMode] = useDarkMode();
   const body = document.getElementById('body');
   const footerAnime = document.getElementById('bar-ball-container');
@@ -80,27 +81,47 @@ const NavBar = () => {
       <section className="for-desk">
         <ul className="desk-ul">
           <li className="desk-ul-li">
-            <NavLink to="/about">
+            <NavLink
+              className={isActive ? 'desk-ul-li-content' : ''}
+              onClick={() => setIsActive(!isActive)}
+              to="/about"
+            >
               About
             </NavLink>
           </li>
           <li className="desk-ul-li">
-            <NavLink to="/contact">
+            <NavLink
+              className={isActive ? 'desk-ul-li-content' : ''}
+              onClick={() => setIsActive(!isActive)}
+              to="/contact"
+            >
               Contact
             </NavLink>
           </li>
           <li className="desk-ul-li">
-            <NavLink to="/projects">
+            <NavLink
+              className={isActive ? 'desk-ul-li-content' : ''}
+              onClick={() => setIsActive(!isActive)}
+              to="/projects"
+            >
               Projects
             </NavLink>
           </li>
           <li className="desk-ul-li">
-            <NavLink to="/skills">
+            <NavLink
+              className={isActive ? 'desk-ul-li-content' : ''}
+              onClick={() => setIsActive(!isActive)}
+              to="/skills"
+            >
               Skills
             </NavLink>
           </li>
           <li className="desk-ul-li">
-            <NavLink to="/services">
+            <NavLink
+              className={isActive ? 'desk-ul-li-content' : ''}
+              onClick={() => setIsActive(!isActive)}
+              to="/services"
+            >
               Services
             </NavLink>
           </li>

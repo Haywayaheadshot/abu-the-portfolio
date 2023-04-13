@@ -14,7 +14,7 @@
 }
 
 .service-container {
-  max-height: 80vh;
+  max-height: 60vh;
   max-width: 70vw;
   overflow-y: scroll;
   scroll-padding: 24px;
