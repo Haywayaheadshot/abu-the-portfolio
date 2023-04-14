@@ -12,6 +12,7 @@ function Service({ service, closeModal }) {
         <nav>
           <GoEyeClosed
             onClick={closeModal}
+            className="close-modal"
           />
         </nav>
         <h1>{service.name}</h1>
@@ -25,7 +26,7 @@ function Service({ service, closeModal }) {
               <tbody>
                 <tr className="service-offer" id="service-offer">
                   <td>
-                    <IconContext.Provider value={{ size: '1.5em', className: 'global-class-name', color: 'hsl(0, 0%, 100%)' }}>
+                    <IconContext.Provider value={{ size: '1.5em', className: 'global-class-name service-icon' }}>
                       <IoMdCheckmarkCircleOutline />
                     </IconContext.Provider>
                   </td>

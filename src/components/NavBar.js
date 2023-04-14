@@ -83,7 +83,7 @@ const NavBar = () => {
         <ul className="desk-ul">
           <li className="desk-ul-li">
             <NavLink
-              className={isActive ? 'desk-ul-li-content' : ''}
+              className={isActive ? 'desk-ul-li-content' : 'desk-ul-li-content'}
               onClick={() => setIsActive(!isActive)}
               to="/about"
             >
@@ -92,7 +92,7 @@ const NavBar = () => {
           </li>
           <li className="desk-ul-li">
             <NavLink
-              className={isActive ? 'desk-ul-li-content' : ''}
+              className={isActive ? 'desk-ul-li-content' : 'desk-ul-li-content'}
               onClick={() => setIsActive(!isActive)}
               to="/contact"
             >
@@ -101,7 +101,7 @@ const NavBar = () => {
           </li>
           <li className="desk-ul-li">
             <NavLink
-              className={isActive ? 'desk-ul-li-content' : ''}
+              className={isActive ? 'desk-ul-li-content' : 'desk-ul-li-content'}
               onClick={() => setIsActive(!isActive)}
               to="/projects"
             >
@@ -110,7 +110,7 @@ const NavBar = () => {
           </li>
           <li className="desk-ul-li">
             <NavLink
-              className={isActive ? 'desk-ul-li-content' : ''}
+              className={isActive ? 'desk-ul-li-content' : 'desk-ul-li-content'}
               onClick={() => setIsActive(!isActive)}
               to="/skills"
             >
@@ -119,7 +119,7 @@ const NavBar = () => {
           </li>
           <li className="desk-ul-li">
             <NavLink
-              className={isActive ? 'desk-ul-li-content' : ''}
+              className={isActive ? 'desk-ul-li-content' : 'desk-ul-li-content'}
               onClick={() => setIsActive(!isActive)}
               to="/services"
             >

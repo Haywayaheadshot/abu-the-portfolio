@@ -220,12 +220,19 @@ ul {
 .light .hamburger-ul,
 .light .home-container,
 .light .footer-container,
-.light .App {
+.light .App,
+.light .contact-container,
+.light .proj-header-container,
+.light .skills-container,
+.light .services-container,
+.light .service-mother-container,
+.light .service-container {
   background: hsl(0, 0%, 100%);
   transition: all 1s ease-in-out 0.25s;
 }
 
-.light .hamburger-ul {
+.light .hamburger-ul,
+.light .service-container {
   border: 1px solid rgb(43, 33, 30);
   box-shadow: 0 0 4px 0 rgb(43, 33, 30);
   transition: all 1s ease-in-out 0.25s;
@@ -235,8 +242,39 @@ ul {
 .light .hamburger-ul-li,
 .light .home-sm-icons,
 .light .landing-page-name,
-.light .home-par {
+.light .home-par,
+.light .desk-ul-li-content,
+.light .about-container-par,
+.light .about-container-par a,
+.light .contact-form label,
+.light .contact-header,
+.light .projects-header,
+.light .projects-sub-header,
+.light .proj-ul h1,
+.light .proj-ul p,
+.light .proj-ul p a,
+.light .proj-ul h3,
+.light .skills-container-h1,
+.light .skill-header,
+.light .skill-section p,
+.light .skill-icons,
+.light .services-container h1,
+.light .services-container h4,
+.light .service-div h3,
+.light .services-icons,
+.light .service-icon,
+.light .service-div button,
+.light .close-modal,
+.light .service-container h1,
+.light .service-container p {
   color: rgb(20, 20, 20);
+}
+
+.light .proj-ul,
+.light .skill,
+.light .service-div {
+  border: 1px solid rgb(154,89,1);
+  border-radius: 10px;
 }
 
 .light .par-section {
