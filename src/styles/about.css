@@ -6,9 +6,6 @@
   color: hsl(0, 0%, 100%);
   font-size: 1.1em;
 }
-a:hover{
- text-decoration: underline;
-}
 
 @media (min-width: 745px) {
   .about-container {
