@@ -227,8 +227,8 @@ ul {
 }
 
 .light .hamburger-ul {
-  border: 1px solid rgb(43,33,30);
-  box-shadow: 0 0 4px 0 rgb(43,33,30);
+  border: 1px solid rgb(43, 33, 30);
+  box-shadow: 0 0 4px 0 rgb(43, 33, 30);
   transition: all 1s ease-in-out 0.25s;
 }
 
@@ -237,7 +237,7 @@ ul {
 .light .home-sm-icons,
 .light .landing-page-name,
 .light .home-par {
-  color:rgb(20, 20, 20);
+  color: rgb(20, 20, 20);
 }
 
 .light .par-section {
