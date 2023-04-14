@@ -35,6 +35,11 @@
   background: none;
   border: none;
   color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.services-icons {
+  color: hsl(0, 0%, 100%);
 }
 
 @media (min-width: 745px) {

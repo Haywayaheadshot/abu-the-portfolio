@@ -17,7 +17,7 @@ const Skill = ({
           <tbody>
             <tr className="skill-section" id="skill-section">
               <td>
-                <IconContext.Provider value={{ size: '1.5em', className: 'global-class-name', color: 'hsl(0, 0%, 100%)' }}>
+                <IconContext.Provider value={{ size: '1.5em', className: 'global-class-name skill-icons' }}>
                   <BsPatchCheck />
                 </IconContext.Provider>
               </td>

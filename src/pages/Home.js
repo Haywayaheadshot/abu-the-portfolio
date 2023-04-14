@@ -9,7 +9,11 @@ const Home = () => (
   <div className="home-container">
     <section className="home-header-div">
       <ul className="home-icons" data-testid="social-media-icons">
-        <IconContext.Provider value={{ size: '1em', className: 'global-class-name', color: 'hsl(0, 0%, 100%)' }}>
+        <IconContext.Provider value={{
+          size: '1em',
+          className: 'global-class-name home-sm-icons',
+        }}
+        >
           <li>
             <a href="https://github.com/Haywayaheadshot" target="_blank" rel="noopener noreferrer">
               <FaGithub />
@@ -32,12 +36,12 @@ const Home = () => (
           </li>
         </IconContext.Provider>
       </ul>
-      <div className="abu-image for-phone" />
-    </section>
-    <section className="landing-page-header">
-      <h1 className="landing-page-name">ABUBAKAR UMMAR</h1>
+      <div className="abu-image" />
     </section>
     <section className="par-section">
+      <div className="landing-page-header">
+        <h1 className="landing-page-name">ABUBAKAR UMMAR</h1>
+      </div>
       <p className="home-par">
         I am excited to offer my skills to help you create your dream product,
         feature, or website. Please take a moment to browse through my previous

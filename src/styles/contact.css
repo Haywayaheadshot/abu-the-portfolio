@@ -1,8 +1,9 @@
 .contact-container {
   background: radial-gradient(circle, rgb(20, 20, 20) 40%, rgb(80, 52, 38) 20%, rgb(43, 33, 30) 10%);
-  padding: 20px;
-  display: grid;
-  place-content: center;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .contact-header {
@@ -10,6 +11,7 @@
   padding: 0;
   color: hsl(0, 0%, 100%);
   text-align: center;
+  font-size: 2.5em;
 }
 
 .contact-form {
@@ -43,7 +45,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 20px;
+  padding-top: 2vh;
 }
 
 .contact-error-message {
@@ -51,4 +54,13 @@
   font-size: 0.8em;
   color: hsl(0, 0%, 100%);
   padding: 10px 5px;
+}
+
+@media (min-width: 745px) {
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    padding: 3vh 10vw;
+    gap: 20px;
+  }
 }
