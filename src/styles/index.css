@@ -212,3 +212,34 @@ ul {
     display: block;
   }
 }
+
+
+/* Light Mode */
+
+.light .nav-container,
+.light .about-container,
+.light .hamburger-ul,
+.light .home-container,
+.light .footer-container,
+.light .App {
+  background: hsl(0, 0%, 100%);
+  transition: all 1s ease-in-out 0.25s;
+}
+
+.light .hamburger-ul {
+  border: 1px solid rgb(43,33,30);
+  box-shadow: 0 0 4px 0 rgb(43,33,30);
+  transition: all 1s ease-in-out 0.25s;
+}
+
+.light .logo,
+.light .hamburger-ul-li,
+.light .home-sm-icons,
+.light .landing-page-name,
+.light .home-par {
+  color:rgb(20, 20, 20);
+}
+
+.light .par-section {
+  border: none;
+}

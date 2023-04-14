@@ -9,7 +9,11 @@ const Home = () => (
   <div className="home-container">
     <section className="home-header-div">
       <ul className="home-icons" data-testid="social-media-icons">
-        <IconContext.Provider value={{ size: '1em', className: 'global-class-name home-sm-icons', color: 'hsl(0, 0%, 100%)' }}>
+        <IconContext.Provider value={{
+          size: '1em',
+          className: 'global-class-name home-sm-icons',
+        }}
+        >
           <li>
             <a href="https://github.com/Haywayaheadshot" target="_blank" rel="noopener noreferrer">
               <FaGithub />
