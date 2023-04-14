@@ -190,11 +190,6 @@ ul {
   height: fit-content;
 }
 
-/* .dark .home-container {
-  background: linear-gradient(-14deg, rgba(20, 20, 20, 0.817) 70%, rgba(80, 52, 38, 0.811) 20%);
-  color: white;
-} */
-
 .for-phone {
   display: block;
 }
