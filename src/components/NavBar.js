@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Squeeze as Hamburger } from 'hamburger-react';
 import { BsFillSunFill, BsMoon } from 'react-icons/bs';
 import { IconContext } from 'react-icons';
@@ -13,9 +13,10 @@ const NavBar = () => {
   const body = document.getElementById('body');
   const footerAnime = document.getElementById('bar-ball-container');
 
-  useEffect(() => {
-    document.body.classList.toggle('dark', isDarkMode);
-  }, [isDarkMode]);
+  const handleDarkMode = () => {
+    toggleDarkMode();
+    document.body.classList.toggle('light');
+  };
 
   const toggleMenu = () => {
     setOpen(!open);
@@ -68,7 +69,7 @@ const NavBar = () => {
             </NavLink>
             <li>
               <div className={isDarkMode ? 'dark' : ''}>
-                <button type="button" onClick={toggleDarkMode}>
+                <button type="button" onClick={() => handleDarkMode()}>
                   <IconContext.Provider value={{ size: '3em', className: 'global-class-name darkmode-btn', color: 'black' }}>
                     {isDarkMode ? <BsFillSunFill /> : <BsMoon />}
                   </IconContext.Provider>
@@ -82,7 +83,7 @@ const NavBar = () => {
         <ul className="desk-ul">
           <li className="desk-ul-li">
             <NavLink
-              className={isActive ? 'desk-ul-li-content' : ''}
+              className={isActive ? 'desk-ul-li-content' : 'desk-ul-li-content'}
               onClick={() => setIsActive(!isActive)}
               to="/about"
             >
@@ -91,7 +92,7 @@ const NavBar = () => {
           </li>
           <li className="desk-ul-li">
             <NavLink
-              className={isActive ? 'desk-ul-li-content' : ''}
+              className={isActive ? 'desk-ul-li-content' : 'desk-ul-li-content'}
               onClick={() => setIsActive(!isActive)}
               to="/contact"
             >
@@ -100,7 +101,7 @@ const NavBar = () => {
           </li>
           <li className="desk-ul-li">
             <NavLink
-              className={isActive ? 'desk-ul-li-content' : ''}
+              className={isActive ? 'desk-ul-li-content' : 'desk-ul-li-content'}
               onClick={() => setIsActive(!isActive)}
               to="/projects"
             >
@@ -109,7 +110,7 @@ const NavBar = () => {
           </li>
           <li className="desk-ul-li">
             <NavLink
-              className={isActive ? 'desk-ul-li-content' : ''}
+              className={isActive ? 'desk-ul-li-content' : 'desk-ul-li-content'}
               onClick={() => setIsActive(!isActive)}
               to="/skills"
             >
@@ -118,7 +119,7 @@ const NavBar = () => {
           </li>
           <li className="desk-ul-li">
             <NavLink
-              className={isActive ? 'desk-ul-li-content' : ''}
+              className={isActive ? 'desk-ul-li-content' : 'desk-ul-li-content'}
               onClick={() => setIsActive(!isActive)}
               to="/services"
             >
@@ -127,9 +128,21 @@ const NavBar = () => {
           </li>
           <li>
             <div className={isDarkMode ? 'dark' : ''}>
-              <button type="button" onClick={toggleDarkMode}>
+              <button type="button" onClick={() => handleDarkMode()}>
                 <IconContext.Provider value={{ size: '1em', className: 'global-class-name darkmode-btn', color: 'black' }}>
-                  {isDarkMode ? <BsFillSunFill /> : <BsMoon />}
+                  {isDarkMode ? (
+                    <>
+                      Light Up
+                      {' '}
+                      <BsFillSunFill />
+                    </>
+                  ) : (
+                    <>
+                      Go Dark
+                      {' '}
+                      <BsMoon />
+                    </>
+                  )}
                 </IconContext.Provider>
               </button>
             </div>

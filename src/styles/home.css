@@ -108,6 +108,7 @@
 
   .home-sm-icons {
     font-size: 3em;
+    color: hsl(0, 0%, 100%);
   }
 
   .home-sm-icons:hover {

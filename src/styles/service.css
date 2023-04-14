@@ -13,6 +13,10 @@
   /* padding: 0 5vw; */
 }
 
+.service-icons {
+  color: hsl(0, 0%, 100%);
+}
+
 .service-container {
   max-height: 60vh;
   max-width: 70vw;

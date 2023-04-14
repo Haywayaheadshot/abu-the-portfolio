@@ -38,6 +38,10 @@
   cursor: pointer;
 }
 
+.services-icons {
+  color: hsl(0, 0%, 100%);
+}
+
 @media (min-width: 745px) {
   .service-div {
     min-height: 40vh;

@@ -41,7 +41,7 @@ const Services = () => {
           const IconComponent = getIconComponent(service.icon);
           return (
             <div key={service.id} className="service-div">
-              {IconComponent && <IconComponent size={40} />}
+              {IconComponent && <IconComponent size={40} className="services-icons" />}
               <h3>{service.name}</h3>
               <button type="button" onClick={() => handleShowDetails(service)}>
                 View more ↗️

@@ -11,6 +11,7 @@ This a project that displays my projects and brief about Abubakar Ummar as a sof
   - [My process](#my-process)
     - [Built with](#built-with)
     - [To run tests](#to-run-tests)
+    - [run linters](#run-linters)
   - [Author](#author)
   - [Acknowledgments](#acknowledgments)
 
@@ -64,6 +65,19 @@ Users should be able to:
 ### To run tests
 
 - run `npm test`
+
+### run linters
+<!-- For eslint errors -->
+- run `npx eslint .`
+  
+<!-- To correct eslint errors -->
+- run `npx eslint . --fix`
+  
+<!-- For styelint -->
+- run `npx stylelint "**/*.{css,scss}"`
+  
+<!-- To correct stylelint errors -->
+- run `npx stylelint "**/*.{css,scss}" --fix`
 
 ## Author
 
