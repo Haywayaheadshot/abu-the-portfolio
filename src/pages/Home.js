@@ -43,10 +43,11 @@ const Home = () => (
         <h1 className="landing-page-name">ABUBAKAR UMMAR</h1>
       </div>
       <p className="home-par">
-        I can help you build a product, feature or website
-        Look through some of my work and experience!
-        If you like what you see and have a project you need coded,
-        try not to hestiate to contact me.
+        I am excited to offer my skills to help you create your dream product,
+        feature, or website. Please take a moment to browse through my previous
+        work and experience. If you find yourself impressed with what you see,
+        don&apos;t hesitate to reach out to me with your project. I&apos;m looking forward to
+        working with you!
       </p>
     </section>
   </div>
