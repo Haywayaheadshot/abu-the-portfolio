@@ -45,12 +45,30 @@ const About = () => (
       .
       <br />
       <br />
-      and you can view my portfolio on Github
+      You can view my portfolio on Github
       {' '}
       <a href="https://www.github.com/Haywayaheadshot" target="_blank" rel="noreferrer"><i><b className="about-email">HERE</b></i></a>
       {' '}
       to see more of my work.
     </p>
+    <section>
+      <div>
+        <h3>Experience</h3>
+      </div>
+      <div>
+        <h3>Completed</h3>
+      </div>
+      <div>
+        <h3>Support</h3>
+      </div>
+    </section>
+    <section>
+      <button type="button">
+        <a href="/" download="Abubakar Ummars' CV">
+          Download CV
+        </a>
+      </button>
+    </section>
   </div>
 );
 
