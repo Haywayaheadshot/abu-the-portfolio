@@ -261,7 +261,9 @@ ul {
 .light .service-div button,
 .light .close-modal,
 .light .service-container h1,
-.light .service-container p {
+.light .service-container p,
+.light .about-icons-section div h3,
+.light .about-icons-section div p {
   color: rgb(20, 20, 20);
 }
 
@@ -272,6 +274,7 @@ ul {
   border-radius: 10px;
 }
 
-.light .par-section {
+.light .par-section,
+.light .about-container {
   border: none;
 }

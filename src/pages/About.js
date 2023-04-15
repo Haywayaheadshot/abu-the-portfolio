@@ -1,5 +1,8 @@
 import React from 'react';
+import { TfiMedallAlt } from 'react-icons/tfi';
+import { BiBriefcaseAlt, BiSupport } from 'react-icons/bi';
 import '../styles/about.css';
+import { IconContext } from 'react-icons';
 
 const About = () => (
   <div className="about-container" data-testid="about-container">
@@ -45,12 +48,44 @@ const About = () => (
       .
       <br />
       <br />
-      and you can view my portfolio on Github
+      You can view my portfolio on Github
       {' '}
       <a href="https://www.github.com/Haywayaheadshot" target="_blank" rel="noreferrer"><i><b className="about-email">HERE</b></i></a>
       {' '}
       to see more of my work.
     </p>
+    <section className="about-icons-section">
+      <IconContext.Provider value={{ size: '1.5em', className: 'global-class-name skill-icons' }}>
+        <div>
+          <TfiMedallAlt />
+          <h3>Experience</h3>
+          <p>
+            1+ Year
+          </p>
+        </div>
+        <div>
+          <BiBriefcaseAlt />
+          <h3>Completed</h3>
+          <p>
+            30+ Projects
+          </p>
+        </div>
+        <div>
+          <BiSupport />
+          <h3>Support</h3>
+          <p>
+            Online 24/7
+          </p>
+        </div>
+      </IconContext.Provider>
+    </section>
+    <section>
+      <button type="button">
+        <a href="/Abubakar-Ummars-Resume-2.0.pdf" download="Abubakar Ummars' CV" className="download-cv">
+          Download CV
+        </a>
+      </button>
+    </section>
   </div>
 );
 
