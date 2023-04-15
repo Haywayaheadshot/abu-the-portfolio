@@ -1,5 +1,8 @@
 import React from 'react';
+import { TfiMedallAlt } from 'react-icons/tfi';
+import { BiBriefcaseAlt, BiSupport } from 'react-icons/bi';
 import '../styles/about.css';
+import { IconContext } from 'react-icons';
 
 const About = () => (
   <div className="about-container" data-testid="about-container">
@@ -51,20 +54,34 @@ const About = () => (
       {' '}
       to see more of my work.
     </p>
-    <section>
-      <div>
-        <h3>Experience</h3>
-      </div>
-      <div>
-        <h3>Completed</h3>
-      </div>
-      <div>
-        <h3>Support</h3>
-      </div>
+    <section className="about-icons-section">
+      <IconContext.Provider value={{ size: '1.5em', className: 'global-class-name skill-icons' }}>
+        <div>
+          <TfiMedallAlt />
+          <h3>Experience</h3>
+          <p>
+            1+ Year
+          </p>
+        </div>
+        <div>
+          <BiBriefcaseAlt />
+          <h3>Completed</h3>
+          <p>
+            30+ Projects
+          </p>
+        </div>
+        <div>
+          <BiSupport />
+          <h3>Support</h3>
+          <p>
+            Online 24/7
+          </p>
+        </div>
+      </IconContext.Provider>
     </section>
     <section>
       <button type="button">
-        <a href="/" download="Abubakar Ummars' CV">
+        <a href="/" download="Abubakar Ummars' CV" className="download-cv">
           Download CV
         </a>
       </button>
