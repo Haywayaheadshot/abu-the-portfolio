@@ -28,7 +28,7 @@
 
 .about-container section button {
   padding: 10px 5px;
-  background: rgb(80,52,38);
+  background: rgb(80, 52, 38);
   border-radius: 5px;
   min-width: 20vw;
   align-self: center;
@@ -44,7 +44,7 @@
 }
 
 .about-icons-section div {
-  border: 1px solid rgb(154,89,1);
+  border: 1px solid rgb(154, 89, 1);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -52,7 +52,7 @@
   align-items: center;
   padding: 20px 5vw;
   border-radius: 10px;
-  box-shadow: 0 0 4px 0 rgb(154,89,1);
+  box-shadow: 0 0 4px 0 rgb(154, 89, 1);
 }
 
 .about-icons-section div h3,
