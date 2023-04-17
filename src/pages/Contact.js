@@ -68,7 +68,7 @@ const Contact = () => {
       <section className="contact-details-section">
         <h1>Talk To Me</h1>
         <div>
-          <a href="https://api.whatsapp.com/send?phone=+233233232585&text=Hello, I am looking to hire a developer!">
+          <a href="https://api.whatsapp.com/send?phone=+233233232585&text=Hello, I am looking to hire a developer!" target="_blank" rel="noreferrer">
             <ImWhatsapp />
             <h3>Whatsapp:</h3>
             <span>+233233232585</span>
@@ -78,7 +78,7 @@ const Contact = () => {
             <h3>Email:</h3>
             <span>ummarabubakar@outlook.com</span>
           </a>
-          <a href="https://www.linkedin.com/in/abubakar-ummar/">
+          <a href="https://www.linkedin.com/in/abubakar-ummar/" target="_blank" rel="noreferrer">
             <ImLinkedin />
             <h3>Linkedin:</h3>
             <span>abubakar-ummar</span>
