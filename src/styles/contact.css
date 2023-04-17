@@ -2,8 +2,10 @@
   background: radial-gradient(circle, rgb(20, 20, 20) 40%, rgb(80, 52, 38) 20%, rgb(43, 33, 30) 10%);
   padding: 5px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-header {
@@ -11,7 +13,7 @@
   padding: 0;
   color: hsl(0, 0%, 100%);
   text-align: center;
-  font-size: 2.5em;
+  font-size: 1.8em;
 }
 
 .contact-form {
@@ -47,6 +49,7 @@
   align-items: center;
   gap: 20px;
   padding-top: 2vh;
+  max-width: 50vw;
 }
 
 .contact-error-message {
@@ -56,11 +59,59 @@
   padding: 10px 5px;
 }
 
+.contact-details-section {
+  padding: 20px;
+}
+
+.contact-details-section,
+.contact-details-section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-details-section div a {
+  min-width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 1px solid rgb(154,89,1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 4px 0 rgb(154,89,1);
+}
+
+.contact-details-section h1 {
+  color: hsl(0, 0%, 100%);
+}
+
 @media (min-width: 745px) {
   .contact-container {
     display: flex;
     flex-direction: row;
     padding: 3vh 10vw;
     gap: 20px;
+  }
+
+  .contact-form label input,
+  .contact-form label textarea {
+    min-width: 40vw;
+    min-height: 30px;
+  }
+
+  .contact-form label textarea {
+    min-height: 150px;
+  }
+
+  .contact-header {
+    font-size: 2.5em;
+  }
+
+  .contact-details-section div a {
+    min-width: 20vw;
   }
 }

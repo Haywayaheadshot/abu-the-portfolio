@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { ImWhatsapp, ImLinkedin } from 'react-icons/im';
+import { SiMinutemailer } from 'react-icons/si';
 import '../styles/contact.css';
 
 const Contact = () => {
@@ -63,19 +65,25 @@ const Contact = () => {
           </section>
         </form>
       </section>
-      <section className="for-desk">
+      <section className="contact-details-section">
         <h1>Talk To Me</h1>
-        <ul>
-          <li>
-            Whatsapp
-          </li>
-          <li>
-            Email
-          </li>
-          <li>
-            Linkedin
-          </li>
-        </ul>
+        <div>
+          <a href="https://api.whatsapp.com/send?phone=+233233232585&text=Hello, I am looking to hire a developer!">
+            <ImWhatsapp />
+            <h3>Whatsapp:</h3>
+            <span>+233233232585</span>
+          </a>
+          <a href="mailto:ummarabubakar@outlook.com">
+            <SiMinutemailer />
+            <h3>Email:</h3>
+            <span>ummarabubakar@outlook.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/abubakar-ummar/">
+            <ImLinkedin />
+            <h3>Linkedin:</h3>
+            <span>abubakar-ummar</span>
+          </a>
+        </div>
       </section>
     </div>
   );

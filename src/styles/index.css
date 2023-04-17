@@ -264,7 +264,9 @@ ul {
 .light .service-container p,
 .light .about-icons-section div h3,
 .light .about-icons-section div p,
-.light .contact-error-message {
+.light .contact-error-message,
+.light .contact-details-section h1,
+.light .contact-details-section a {
   color: rgb(20, 20, 20);
 }
 
