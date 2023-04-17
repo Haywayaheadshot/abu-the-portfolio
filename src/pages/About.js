@@ -80,11 +80,9 @@ const About = () => (
       </IconContext.Provider>
     </section>
     <section>
-      <button type="button">
-        <a href="/Abubakar-Ummars-Resume-2.0.pdf" download="Abubakar Ummars' CV" className="download-cv">
-          Download CV
-        </a>
-      </button>
+      <a href="/Abubakar-Ummars-Resume-2.0.pdf" download="Abubakar Ummars' CV" className="download-cv">
+        Download CV
+      </a>
     </section>
   </div>
 );

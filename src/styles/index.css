@@ -247,6 +247,7 @@ ul {
 .light .projects-sub-header,
 .light .proj-ul h1,
 .light .proj-ul p,
+.light .contact-details-section a,
 .light .proj-ul p a,
 .light .proj-ul h3,
 .light .skills-container-h1,
@@ -263,7 +264,9 @@ ul {
 .light .service-container h1,
 .light .service-container p,
 .light .about-icons-section div h3,
-.light .about-icons-section div p {
+.light .about-icons-section div p,
+.light .contact-error-message,
+.light .contact-details-section h1 {
   color: rgb(20, 20, 20);
 }
 
