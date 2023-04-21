@@ -32,6 +32,10 @@ const defaultState = [
       skill: 'JavaScript',
       level: 'Intermediate',
     },
+    {
+      skill: 'TypeScript',
+      level: 'Intermediate',
+    },
     ],
   },
   {

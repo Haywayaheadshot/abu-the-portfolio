@@ -6,7 +6,7 @@ import { IconContext } from 'react-icons';
 
 const About = () => (
   <div className="about-container" data-testid="about-container">
-    <p className="about-container-par" data-testid="about-container-par">
+    <p className="about-container-par code" data-testid="about-container-par">
       Hi there! My name is Abubakar Ummar, and I am a full-stack developer
       with hands-on experience in JavaScript, React, Redux, Ruby, Ruby on Rails,
       HTML5, CSS3, Bootstrap5, and Tailwind. I am passionate about building user-friendly
@@ -29,7 +29,7 @@ const About = () => (
       <br />
       Here are my key skills and experience:
       <br />
-      - Front-End: JavaScript, React, Redux, HTML5, CSS3, Bootstrap5, Tailwind.
+      - Front-End: JavaScript, React, Redux, HTML5, CSS3, Bootstrap5, TypeScript, Tailwind.
       <br />
       - Back-End: Ruby, Ruby on Rails.
       <br />
