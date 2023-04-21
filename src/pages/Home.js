@@ -46,7 +46,7 @@ const Home = () => (
         I am excited to offer my skills to help you create your dream product,
         feature, or website. Please take a moment to browse through my previous
         projects and skills. If you find yourself impressed with what you see,
-        don&apos;t hesitate to reach out to me with your project. I&apos;m looking forward to
+        do not hesitate to reach out to me with your project. I am looking forward to
         working with you!
       </p>
     </section>
