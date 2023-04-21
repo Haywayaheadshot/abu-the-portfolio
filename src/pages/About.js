@@ -6,7 +6,7 @@ import { IconContext } from 'react-icons';
 
 const About = () => (
   <div className="about-container" data-testid="about-container">
-    <p className="about-container-par code" data-testid="about-container-par">
+    <p className="about-container-par body-font" data-testid="about-container-par">
       Hi there! My name is Abubakar Ummar, and I am a full-stack developer
       with hands-on experience in JavaScript, React, Redux, Ruby, Ruby on Rails,
       HTML5, CSS3, Bootstrap5, and Tailwind. I am passionate about building user-friendly
@@ -41,7 +41,7 @@ const About = () => (
       Please feel free to email me at
       {' '}
       <a href="mailto:haywayaheadshotstrategy.fx@gmail.com">
-        <span className="about-email">
+        <span className="about-email body-font">
           haywayaheadshotstrategy.fx@gmail.com
         </span>
       </a>
@@ -50,7 +50,7 @@ const About = () => (
       <br />
       You can view my portfolio on Github
       {' '}
-      <a href="https://www.github.com/Haywayaheadshot" target="_blank" rel="noreferrer"><i><b className="about-email">HERE</b></i></a>
+      <a href="https://www.github.com/Haywayaheadshot" target="_blank" rel="noreferrer"><i><b className="about-email body-font">HERE</b></i></a>
       {' '}
       to see more of my work.
     </p>
@@ -58,29 +58,29 @@ const About = () => (
       <IconContext.Provider value={{ size: '1.5em', className: 'global-class-name skill-icons' }}>
         <div>
           <TfiMedallAlt />
-          <h3>Experience</h3>
-          <p>
+          <h3 className="body-font">Experience</h3>
+          <p className="body-font">
             1+ Year
           </p>
         </div>
         <div>
           <BiBriefcaseAlt />
-          <h3>Completed</h3>
-          <p>
+          <h3 className="body-font">Completed</h3>
+          <p className="body-font">
             30+ Projects
           </p>
         </div>
         <div>
           <BiSupport />
-          <h3>Support</h3>
-          <p>
+          <h3 className="body-font">Support</h3>
+          <p className="body-font">
             Online 24/7
           </p>
         </div>
       </IconContext.Provider>
     </section>
     <section>
-      <a href="/Abubakar-Ummars-Resume-2.0.pdf" download="Abubakar Ummars' CV" className="download-cv">
+      <a href="/Abubakar-Ummars-Resume-2.0.pdf" download="Abubakar Ummars' CV" className="download-cv body-font">
         Download CV
       </a>
     </section>

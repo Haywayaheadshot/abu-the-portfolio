@@ -33,8 +33,8 @@ const Services = () => {
   return (
     <div className="services-container">
       <section>
-        <h1>Services</h1>
-        <h4>What I offer</h4>
+        <h1 className="body-font">Services</h1>
+        <h4 className="body-font">What I offer</h4>
       </section>
       <section className="mapped-services">
         {services.map((service) => {
@@ -42,8 +42,8 @@ const Services = () => {
           return (
             <div key={service.id} className="service-div">
               {IconComponent && <IconComponent size={40} className="services-icons" />}
-              <h3>{service.name}</h3>
-              <button type="button" onClick={() => handleShowDetails(service)}>
+              <h3 className="body-font">{service.name}</h3>
+              <button type="button" className="body-font" onClick={() => handleShowDetails(service)}>
                 View more ↗️
               </button>
             </div>
