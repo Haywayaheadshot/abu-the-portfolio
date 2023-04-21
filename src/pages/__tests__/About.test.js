@@ -18,12 +18,12 @@ describe('About component', () => {
 
   it('should render "Hi! My name is Abubakar Ummar"', () => {
     render(<About />);
-    expect(screen.getByText(/Hi! My name is Abubakar Ummar/i)).toBeInTheDocument();
+    expect(screen.getByText(/My name is Abubakar Ummar/i)).toBeInTheDocument();
   });
 
   it('should render "looking for a developer?"', () => {
     render(<About />);
-    expect(screen.getByText(/Looking for a developer?/i)).toBeInTheDocument();
+    expect(screen.getByText(/looking for a skilled developer?/i)).toBeInTheDocument();
   });
 
   it('should render a link to the Github profile', () => {
@@ -38,6 +38,6 @@ describe('About component', () => {
     render(<About />);
     const email = screen.getByText('haywayaheadshotstrategy.fx@gmail.com');
     expect(email).toBeInTheDocument();
-    expect(email).toHaveProperty('tagName', 'STRONG');
+    expect(email).toHaveProperty('tagName', 'SPAN');
   });
 });

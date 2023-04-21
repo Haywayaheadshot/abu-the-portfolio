@@ -18,7 +18,7 @@ describe('Home Component', () => {
 
   test('renders paragraph', () => {
     const { getByText } = render(<Home />);
-    const paragraph = getByText('I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, try not to hestiate to contact me.');
+    const paragraph = getByText('I am excited to offer my skills to help you create your dream product, feature, or website. Please take a moment to browse through my previous projects and skills. If you find yourself impressed with what you see, do not hesitate to reach out to me with your project. I am looking forward to working with you!');
     expect(paragraph).toBeInTheDocument();
   });
 });
