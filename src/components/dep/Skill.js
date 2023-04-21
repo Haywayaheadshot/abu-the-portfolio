@@ -8,7 +8,7 @@ const Skill = ({
   title, skillArray,
 }) => (
   <div className="skill-container-ul">
-    <h1 className="skill-header">
+    <h1 className="skill-header body-font">
       {title}
     </h1>
     <section className="skill-list-container">
@@ -22,10 +22,10 @@ const Skill = ({
                 </IconContext.Provider>
               </td>
               <td>
-                <p>
+                <p className="body-font">
                   {skill.skill}
                   <br />
-                  <span className="level-span">
+                  <span className="level-span body-font">
                     {skill.level}
                   </span>
                 </p>

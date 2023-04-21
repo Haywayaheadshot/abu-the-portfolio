@@ -21,6 +21,10 @@ body {
   font-family: 'Amatic SC', cursive;
 }
 
+.body-font {
+  font-family: 'Lato', sans-serif;
+}
+
 a,
 a:hover,
 a:active {

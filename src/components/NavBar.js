@@ -53,19 +53,19 @@ const NavBar = () => {
         {open ? (
           <ul className="hamburger-ul">
             <NavLink to="/about" onClick={() => toggleMenu(false)}>
-              <li className="hamburger-ul-li">About</li>
+              <li className="hamburger-ul-li body-font">About</li>
             </NavLink>
             <NavLink to="/contact" onClick={() => toggleMenu(false)}>
-              <li className="hamburger-ul-li">Contact</li>
+              <li className="hamburger-ul-li body-font">Contact</li>
             </NavLink>
             <NavLink to="/projects" onClick={() => toggleMenu(false)}>
-              <li className="hamburger-ul-li">Projects</li>
+              <li className="hamburger-ul-li body-font">Projects</li>
             </NavLink>
             <NavLink to="/skills" onClick={() => toggleMenu(false)}>
-              <li className="hamburger-ul-li">Skills</li>
+              <li className="hamburger-ul-li body-font">Skills</li>
             </NavLink>
             <NavLink to="/services" onClick={() => toggleMenu(false)}>
-              <li className="hamburger-ul-li">Services</li>
+              <li className="hamburger-ul-li body-font">Services</li>
             </NavLink>
             <li>
               <div className={isDarkMode ? 'dark' : ''}>
@@ -81,7 +81,7 @@ const NavBar = () => {
       </section>
       <section className="for-desk">
         <ul className="desk-ul">
-          <li className="desk-ul-li">
+          <li className="desk-ul-li body-font">
             <NavLink
               className={isActive ? 'desk-ul-li-content' : 'desk-ul-li-content'}
               onClick={() => setIsActive(!isActive)}
@@ -90,7 +90,7 @@ const NavBar = () => {
               About
             </NavLink>
           </li>
-          <li className="desk-ul-li">
+          <li className="desk-ul-li body-font">
             <NavLink
               className={isActive ? 'desk-ul-li-content' : 'desk-ul-li-content'}
               onClick={() => setIsActive(!isActive)}
@@ -99,7 +99,7 @@ const NavBar = () => {
               Contact
             </NavLink>
           </li>
-          <li className="desk-ul-li">
+          <li className="desk-ul-li body-font">
             <NavLink
               className={isActive ? 'desk-ul-li-content' : 'desk-ul-li-content'}
               onClick={() => setIsActive(!isActive)}
@@ -108,7 +108,7 @@ const NavBar = () => {
               Projects
             </NavLink>
           </li>
-          <li className="desk-ul-li">
+          <li className="desk-ul-li body-font">
             <NavLink
               className={isActive ? 'desk-ul-li-content' : 'desk-ul-li-content'}
               onClick={() => setIsActive(!isActive)}
@@ -117,7 +117,7 @@ const NavBar = () => {
               Skills
             </NavLink>
           </li>
-          <li className="desk-ul-li">
+          <li className="desk-ul-li body-font">
             <NavLink
               className={isActive ? 'desk-ul-li-content' : 'desk-ul-li-content'}
               onClick={() => setIsActive(!isActive)}
@@ -129,7 +129,7 @@ const NavBar = () => {
           <li>
             <div className={isDarkMode ? 'dark' : ''}>
               <button type="button" onClick={() => handleDarkMode()}>
-                <IconContext.Provider value={{ size: '1em', className: 'global-class-name darkmode-btn', color: 'black' }}>
+                <IconContext.Provider value={{ size: '1em', className: 'global-class-name darkmode-btn body-font', color: 'black' }}>
                   {isDarkMode ? (
                     <>
                       Light Up

@@ -7,7 +7,7 @@ const Project = ({
 }) => (
   <ul className="proj-ul">
     <li>
-      <h1>
+      <h1 className="body-font">
         {title}
       </h1>
     </li>
@@ -16,14 +16,14 @@ const Project = ({
       <img className="proj-screen-shot for-desk" src={deskScreenShot === '' ? 'no-camera.png' : deskScreenShot} alt="Project Screenshot" />
     </li>
     <li>
-      <p>
+      <p className="body-font">
         {description}
       </p>
     </li>
     <li className="tech-built-with">
-      <h3>Stack:</h3>
+      <h3 className="body-font">Stack:</h3>
       {stack.map((s) => (
-        <h3 key={`stack-${s.id}`}>
+        <h3 key={`stack-${s.id}`} className="body-font">
           [
           {s}
           ]
@@ -31,9 +31,9 @@ const Project = ({
       ))}
     </li>
     <li className="tech-built-with">
-      <h3>Built with:</h3>
+      <h3 className="body-font">Built with:</h3>
       {builtWith.map((tech) => (
-        <h3 key={tech.id}>
+        <h3 key={tech.id} className="body-font">
           [
           {tech}
           ]
@@ -41,18 +41,18 @@ const Project = ({
       ))}
     </li>
     <li>
-      <p>
+      <p className="body-font">
         To view live demo, click
         {' '}
         <a href={liveDemo} target="_blank" rel="noreferrer">
-          <b>HERE</b>
+          <b className="body-font">HERE</b>
           .
         </a>
         <br />
         To see live source code, click
         {' '}
         <a href={sourceCode} target="_blank" rel="noreferrer">
-          <b>HERE</b>
+          <b className="body-font">HERE</b>
           .
         </a>
       </p>

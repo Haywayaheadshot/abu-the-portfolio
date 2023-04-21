@@ -3,7 +3,6 @@ import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import HamburgerPop from './components/HamburgerPop';
 import './styles/App.css';
 import Footer from './pages/Footer';
 import Projects from './pages/Projects';
@@ -26,7 +25,6 @@ function App() {
             <Route exact path="/skills" element={<Skills />} />
             <Route exact path="/services" element={<Services />} />
           </Routes>
-          <HamburgerPop />
         </main>
         <footer>
           <Footer />

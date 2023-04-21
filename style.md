@@ -12,7 +12,9 @@ White: hsl(0, 0%, 100%)
 font-family: 'Amatic SC', cursive;
 https://fonts.google.com/specimen/Amatic+SC
 
-
+### 2. Lato
+font-family: 'Lato', sans-serif;
+https://fonts.google.com/specimen/Lato
 
 # Footer unused code
 

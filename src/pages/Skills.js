@@ -7,7 +7,7 @@ const Skills = () => {
   const skill = useSelector((state) => state.skills);
   return (
     <div className="skills-container">
-      <h1 className="skills-container-h1">Skills</h1>
+      <h1 className="skills-container-h1 body-font">Skills</h1>
       <section className="skills-display">
         {skill.map((s) => (
           <div key={s.id} data-testid="skill" className="skill">

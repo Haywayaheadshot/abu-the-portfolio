@@ -20,16 +20,16 @@ const Portfolio = () => {
   return (
     <div className="proj-header-container">
       <section>
-        <h1 className="projects-header">Welcome To The Projects Section.</h1>
-        <h4 className="projects-sub-header">
+        <h1 className="projects-header body-font">Welcome To The Projects Section.</h1>
+        <h4 className="projects-sub-header body-font">
           Below are some of the projects I have worked on.
         </h4>
       </section>
       <select className="select-projs" onChange={handleSelectChange} data-testid="select-projs">
-        <option value="">All Projects</option>
-        <option value="Front-End">Front-End Projects</option>
-        <option value="Back-End">Back-End Projects</option>
-        <option value="Full-Stack">Full-Stack Projects</option>
+        <option className="body-font" value="">All Projects</option>
+        <option className="body-font" value="Front-End">Front-End Projects</option>
+        <option className="body-font" value="Back-End">Back-End Projects</option>
+        <option className="body-font" value="Full-Stack">Full-Stack Projects</option>
       </select>
       <section className="projects-display">
         {filteredRepo.map((r) => (

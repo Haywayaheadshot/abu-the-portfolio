@@ -40,9 +40,9 @@ const Home = () => (
     </section>
     <section className="par-section">
       <div className="landing-page-header">
-        <h1 className="landing-page-name">ABUBAKAR UMMAR</h1>
+        <h1 className="landing-page-name body-font">ABUBAKAR UMMAR</h1>
       </div>
-      <p className="home-par">
+      <p className="home-par body-font">
         I am excited to offer my skills to help you create your dream product,
         feature, or website. Please take a moment to browse through my previous
         projects and skills. If you find yourself impressed with what you see,

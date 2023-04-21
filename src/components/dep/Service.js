@@ -15,8 +15,8 @@ function Service({ service, closeModal }) {
             className="close-modal"
           />
         </nav>
-        <h1>{service.name}</h1>
-        <p>
+        <h1 className="body-font">{service.name}</h1>
+        <p className="body-font">
           Services with more than 1 year+ hands-on Experience in building
           and designing innovative software solution
         </p>
@@ -31,7 +31,7 @@ function Service({ service, closeModal }) {
                     </IconContext.Provider>
                   </td>
                   <td>
-                    <p>{offer}</p>
+                    <p className="body-font">{offer}</p>
                   </td>
                 </tr>
               </tbody>
