@@ -40,9 +40,9 @@ const About = () => (
       If you&apos;re looking for a skilled developer, let&apos;s schedule a Zoom call.
       Please feel free to email me at
       {' '}
-      <a href="mailto:haywayaheadshotstrategy.fx@gmail.com">
+      <a href="mailto:ummarabubakar@outlook.com">
         <span className="about-email body-font">
-          haywayaheadshotstrategy.fx@gmail.com
+          ummarabubakar@outlook.com
         </span>
       </a>
       .
