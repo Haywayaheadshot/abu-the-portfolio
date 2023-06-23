@@ -34,7 +34,7 @@ Users should be able to:
 ![Mobile](public/project_screenshot/mobile-dark.png)
 
 ![Desktop](public/project_screenshot/desk-light.png)
-![Desktop](public/project_screenshot/mobile-dark.png)
+![Desktop](public/project_screenshot/desk-dark.png)
 
 ### Links
 
