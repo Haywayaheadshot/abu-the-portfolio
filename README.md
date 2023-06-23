@@ -7,6 +7,8 @@ This a project that displays my projects and brief about Abubakar Ummar as a sof
 - [My Portfolio](#my-portfolio)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
@@ -17,23 +19,22 @@ This a project that displays my projects and brief about Abubakar Ummar as a sof
 
 ## Overview
 
-<!-- ### The challenge
+### The challenge
 
 Users should be able to:
 
-- Type a header when the user starts with commands "/1" to "/6"
-- See a pop up appears when user types anything that starts with commands "/1" to "/6"
-- Update the UI without the text commands "/1" to "/6"
-- Update the text in accordance to the user input of "/{header tag}"
-- See nothing on the UI when they press enter without any inputs or just "/1" to "/6" commands -->
+- see a list of projects the developer has worked on.
+- reach the developer via whatsapp when they click on the email, linkedin, and whatsapp button in the Contact Page.
+- download the developers CV when they click on the "Download CV" button in the About page.
+- see a list of skills the developer has when they click on the Skills page.
 
-<!-- ### Screenshot
+### Screenshot
 
-![Mobile](/src/components/images/Notion-Editor-Clone-mobile-1.png)
-![Mobile](/src/components/images/Notion-Editor-Clone-mobile-2.png)
+![Mobile](public/project_screenshot/mobile-light.png)
+![Mobile](public/project_screenshot/mobile-dark.png)
 
-![Desktop](/src/components/images/Notion-Editor-Clone-desktop-1.png)
-![Desktop](/src/components/images/Notion-Editor-Clone-desktop-2.png) -->
+![Desktop](public/project_screenshot/desk-light.png)
+![Desktop](public/project_screenshot/mobile-dark.png)
 
 ### Links
 
