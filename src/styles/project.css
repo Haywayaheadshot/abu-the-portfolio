@@ -1,13 +1,9 @@
 .proj-ul {
   display: flex;
   flex-direction: column;
-
-  /* gap: 20px; */
   justify-content: center;
   align-items: center;
   max-width: 80vw;
-
-  /* max-height: 50vh; */
   box-shadow: 0 0 5px 0 rgb(80, 52, 38);
   padding: 0 10px;
 }
@@ -30,8 +26,6 @@
 
 .proj-screen-shot {
   max-width: 50vw;
-
-  /* scroll-snap-align: start; */
   flex: 0 0 100%;
 }
 
@@ -46,6 +40,13 @@
 @media (min-width: 745px) {
   .proj-ul {
     max-width: 40vw;
+    min-height: 90vh;
+    cursor: pointer;
+  }
+
+  .proj-ul:hover {
+    transform: scale(0.95, 1.05);
+    transition: all 1s ease-in-out 0.25s;
   }
 
   .proj-screen-shot {
