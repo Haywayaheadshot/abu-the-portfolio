@@ -46,7 +46,7 @@
 
   .proj-ul:hover {
     transform: scale(0.95, 1.05);
-    transition: all 1s ease-in-out 0.25s;;
+    transition: all 1s ease-in-out 0.25s;
   }
 
   .proj-screen-shot {
