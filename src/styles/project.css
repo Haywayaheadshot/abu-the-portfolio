@@ -8,6 +8,23 @@
   padding: 0 10px;
 }
 
+.built-with-tech {
+  display: inline-flex;
+  max-width: inherit;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 3px;
+  color: hsl(0, 0%, 100%);
+}
+
+.built-with-stack {
+  display: inline-flex;
+  max-width: inherit;
+  flex-direction: row;
+  gap: 10px;
+  color: hsl(0, 0%, 100%);
+}
+
 .proj-ul h1,
 .proj-ul h2,
 .proj-ul p,
@@ -52,5 +69,10 @@
   .proj-screen-shot {
     max-width: 35vw;
     max-height: 30vh;
+  }
+
+  .built-with-tech {
+    flex-direction: row;
+    gap: 10px;
   }
 }
