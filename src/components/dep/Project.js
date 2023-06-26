@@ -32,13 +32,15 @@ const Project = ({
     </li>
     <li className="tech-built-with">
       <h3 className="body-font">Built with:</h3>
-      {builtWith.map((tech) => (
-        <h3 key={tech.id} className="body-font">
-          [
-          {tech}
-          ]
-        </h3>
-      ))}
+      <ul className="built-with-tech">
+        {builtWith.map((tech) => (
+          <li key={tech.id} className="body-font">
+            [
+            {tech}
+            ]
+          </li>
+        ))}
+      </ul>
     </li>
     <li>
       <p className="body-font">
