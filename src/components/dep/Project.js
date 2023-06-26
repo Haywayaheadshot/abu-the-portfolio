@@ -22,13 +22,15 @@ const Project = ({
     </li>
     <li className="tech-built-with">
       <h3 className="body-font">Stack:</h3>
-      {stack.map((s) => (
-        <h3 key={`stack-${s.id}`} className="body-font">
-          [
-          {s}
-          ]
-        </h3>
-      ))}
+      <ul className="built-with-stack">
+        {stack.map((s) => (
+          <li key={`stack-${s.id}`} className="body-font">
+            [
+            {s}
+            ]
+          </li>
+        ))}
+      </ul>
     </li>
     <li className="tech-built-with">
       <h3 className="body-font">Built with:</h3>
