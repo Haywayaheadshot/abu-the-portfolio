@@ -7,6 +7,15 @@
   font-size: 1.1em;
 }
 
+.download-cv:hover {
+  background-color: rgb(154, 89, 1);
+}
+
+.download-cv:active {
+  background-color: #fff;
+  color: rgb(80, 52, 38)
+}
+
 .about-email {
   text-decoration: underline;
 }
