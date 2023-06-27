@@ -39,7 +39,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/Haywayaheadshot/abu-the-portfolio)
-- Live Site URL: [Live Demo](https://abubakar-portfolio.netlify.app/)
+- Live Site URL: [Live Demo](https://ummar-portfolio.netlify.app/)
 
 ## My process
 
