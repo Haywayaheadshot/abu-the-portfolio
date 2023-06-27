@@ -270,7 +270,9 @@ ul {
 .light .about-icons-section div h3,
 .light .about-icons-section div p,
 .light .contact-error-message,
-.light .contact-details-section h1 {
+.light .contact-details-section h1,
+.light .built-with-tech,
+.light .built-with-stack {
   color: rgb(20, 20, 20);
 }
 
@@ -284,4 +286,8 @@ ul {
 .light .par-section,
 .light .about-container {
   border: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }

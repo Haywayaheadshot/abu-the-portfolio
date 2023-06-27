@@ -49,14 +49,14 @@ const Project = ({
         To view live demo, click
         {' '}
         <a href={liveDemo} target="_blank" rel="noreferrer">
-          <b className="body-font">HERE</b>
+          <b className="body-font source-code-live-demo">HERE</b>
           .
         </a>
         <br />
         To see live source code, click
         {' '}
         <a href={sourceCode} target="_blank" rel="noreferrer">
-          <b className="body-font">HERE</b>
+          <b className="body-font source-code-live-demo">HERE</b>
           .
         </a>
       </p>

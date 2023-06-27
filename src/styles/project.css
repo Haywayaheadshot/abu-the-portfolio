@@ -25,6 +25,17 @@
   color: hsl(0, 0%, 100%);
 }
 
+.source-code-live-demo {
+  text-decoration: underline;
+}
+
+.source-code-live-demo:hover {
+  background-color: deepskyblue;
+  padding: 2px 3px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 0 rgb(154, 89, 1);
+}
+
 .proj-ul h1,
 .proj-ul h2,
 .proj-ul p,

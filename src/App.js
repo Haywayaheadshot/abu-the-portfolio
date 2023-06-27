@@ -16,7 +16,7 @@ function App() {
         <header>
           <NavBar />
         </header>
-        <main>
+        <main id="main" className="main-view">
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/about" element={<About />} />
