@@ -1,3 +1,13 @@
 .App {
   height: 100vh;
 }
+
+.main-view {
+  padding-top: 15vh;
+}
+
+@media (min-width: 745px) {
+  .main-view {
+    padding-top: 13vh;
+  }
+}
