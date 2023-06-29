@@ -46,14 +46,20 @@ const Project = ({
     </li>
     <li>
       <p className="body-font">
-        To view live demo, click
+        To view
+        {' '}
+        <b>LIVE DEMO</b>
+        , click
         {' '}
         <a href={liveDemo} target="_blank" rel="noreferrer">
           <b className="body-font source-code-live-demo">HERE</b>
           .
         </a>
         <br />
-        To see live source code, click
+        To see live
+        {' '}
+        <b>SOURCE CODE</b>
+        , click
         {' '}
         <a href={sourceCode} target="_blank" rel="noreferrer">
           <b className="body-font source-code-live-demo">HERE</b>
