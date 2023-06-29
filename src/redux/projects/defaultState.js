@@ -13,8 +13,8 @@ const defaultState = [
     sourceCode: 'https://github.com/Haywayaheadshot/book-an-appointment-front-end',
     stack: ['Front-End', 'Full-Stack'],
     builtWith: ['React', 'Redux'],
-    mobileScreenShot: 'doctors-appointment/Doctors-Appointment-front-end-mobile.png',
-    deskScreenShot: 'doctors-appointment/Doctors-Appointment-front-end-desk.png',
+    mobileScreenShot: 'doctors-appointment/Doctors-Appointment-back-end-mobile.png',
+    deskScreenShot: 'doctors-appointment/Doctors-Appointment-back-end-desk.png',
   },
   {
     id: uuidv4(),
@@ -47,8 +47,8 @@ const defaultState = [
     sourceCode: 'https://github.com/Haywayaheadshot/budget-app',
     stack: ['Full-Stack'],
     builtWith: ['Ruby', 'Ruby On Rails'],
-    mobileScreenShot: '',
-    deskScreenShot: '',
+    mobileScreenShot: 'buget-app/mobile-sc.png',
+    deskScreenShot: 'buget-app/desk-sc-2.png',
   },
   {
     id: uuidv4(),
@@ -136,8 +136,8 @@ const defaultState = [
     sourceCode: 'https://github.com/Haywayaheadshot/Recipe-app',
     stack: ['Full-Stack'],
     builtWith: ['Ruby', 'Ruby On Rails'],
-    mobileScreenShot: '',
-    deskScreenShot: '',
+    mobileScreenShot: 'recipe-app/mobile-sc.png',
+    deskScreenShot: 'recipe-app/desk-sc.png',
   },
   {
     id: uuidv4(),
@@ -154,21 +154,6 @@ const defaultState = [
     builtWith: ['Ruby'],
     mobileScreenShot: 'catalog/catalog_of_my_things.png',
     deskScreenShot: 'catalog/catalog_of_my_things.png',
-  },
-  {
-    id: uuidv4(),
-    title: 'School Library',
-    description:
-    `
-    This app allows you to interact with some classes and their linked
-    features in order to see how a school library works.
-    `,
-    liveDemo: 'https://github.com/Haywayaheadshot/school-library',
-    sourceCode: 'https://github.com/Haywayaheadshot/school-library',
-    stack: ['Back-End'],
-    builtWith: ['Ruby'],
-    mobileScreenShot: '',
-    deskScreenShot: '',
   },
 ];
 
