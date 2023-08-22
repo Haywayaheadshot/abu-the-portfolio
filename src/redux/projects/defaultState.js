@@ -13,12 +13,12 @@ const defaultState = [
     products with their credit card, and reach the seller on Whatsapp with details
     of the product when the user clicks a "Proceed to checkout" button.
     `,
-    liveDemo: 'https://arha-deals.netlify.app/',
+    liveDemo: 'https://www.youtube.com/watch?v=xvise4cYo0c',
     sourceCode: 'https://github.com/Haywayaheadshot/arha_deals',
     stack: ['Front-End', 'Full-Stack'],
     builtWith: ['React', 'Redux', 'TypeScript', 'Vite', 'Tailwind', 'Daisyui'],
-    mobileScreenShot: '',
-    deskScreenShot: '',
+    mobileScreenShot: 'arha-deals/mobile-sc.png',
+    deskScreenShot: 'arha-deals/desk-sc.png',
   },
   {
     id: uuidv4(),
@@ -31,12 +31,12 @@ const defaultState = [
     population of tables. It receives user data from the front-end and
     stores the data encrypting the password.
     `,
-    liveDemo: 'https://github.com/Haywayaheadshot/arha_deals_backend',
+    liveDemo: 'https://www.youtube.com/watch?v=xvise4cYo0c',
     sourceCode: 'https://github.com/Haywayaheadshot/arha_deals_backend',
     stack: ['Back-End', 'Full-Stack'],
     builtWith: ['Ruby', 'Ruby On Rails', 'Devise', 'JWT', 'Tailwind'],
-    mobileScreenShot: '',
-    deskScreenShot: '',
+    mobileScreenShot: 'arha-deals/mobile-sc-2.png',
+    deskScreenShot: 'arha-deals/desk-sc-2.png',
   },
   {
     id: uuidv4(),
