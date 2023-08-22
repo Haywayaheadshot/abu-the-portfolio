@@ -23,8 +23,8 @@ const Project = ({
     <li className="tech-built-with">
       <h3 className="body-font">Stack:</h3>
       <ul className="built-with-stack">
-        {stack.map((s) => (
-          <li key={`stack-${s.id}`} className="body-font">
+        {stack.map((s, index) => (
+          <li key={s[index]} className="body-font">
             [
             {s}
             ]
@@ -35,8 +35,8 @@ const Project = ({
     <li className="tech-built-with">
       <h3 className="body-font">Built with:</h3>
       <ul className="built-with-tech">
-        {builtWith.map((tech) => (
-          <li key={tech.id} className="body-font">
+        {builtWith.map((tech, index) => (
+          <li key={`tech-${tech[index]}`} className="body-font">
             [
             {tech}
             ]
