@@ -3,6 +3,43 @@ import { v4 as uuidv4 } from 'uuid';
 const defaultState = [
   {
     id: uuidv4(),
+    title: 'Arha-Deals Front-End',
+    description:
+    `
+    Arha-Deals Front-End is a front-end e-commerce web application. It allows users to browse
+    through a collection of available products, add products to a cart, delete items
+    from a cart, see the number of items in their cart, see the total amount of items
+    in their cart, access webpage on mobile, tablet and desktop versions, pay for
+    products with their credit card, and reach the seller on Whatsapp with details
+    of the product when the user clicks a "Proceed to checkout" button.
+    `,
+    liveDemo: 'https://arha-deals.netlify.app/',
+    sourceCode: 'https://github.com/Haywayaheadshot/arha_deals',
+    stack: ['Front-End', 'Full-Stack'],
+    builtWith: ['React', 'Redux', 'TypeScript', 'Vite', 'Tailwind', 'Daisyui'],
+    mobileScreenShot: '',
+    deskScreenShot: '',
+  },
+  {
+    id: uuidv4(),
+    title: 'Arha-Deals Back-End',
+    description:
+    `
+    Arha-Deals Back-End is the back-end of an e-commerce web application.
+    It sends data containing phones, baby products, and reels via their
+    respective API's. It also has a UI that allows admin access and allows
+    population of tables. It receives user data from the front-end and
+    stores the data encrypting the password.
+    `,
+    liveDemo: 'https://github.com/Haywayaheadshot/arha_deals_backend',
+    sourceCode: 'https://github.com/Haywayaheadshot/arha_deals_backend',
+    stack: ['Back-End', 'Full-Stack'],
+    builtWith: ['Ruby', 'Ruby On Rails', 'Devise', 'JWT', 'Tailwind'],
+    mobileScreenShot: '',
+    deskScreenShot: '',
+  },
+  {
+    id: uuidv4(),
     title: 'Book an Appointment Front-End',
     description:
     `
