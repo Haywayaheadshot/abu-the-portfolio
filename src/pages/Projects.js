@@ -22,7 +22,13 @@ const Portfolio = () => {
       <section>
         <h1 className="projects-header body-font">Welcome To The Projects Section.</h1>
         <h4 className="projects-sub-header body-font">
-          Below are some of the projects I have worked on.
+          Please check
+          <a href="https://www.github.com/Haywayaheadshot" target="_blank" rel="noreferrer">
+            {' '}
+            <i><b className="about-email body-font">Github</b></i>
+            {' '}
+          </a>
+          for up to date side projects!
         </h4>
       </section>
       <select className="select-projs" onChange={handleSelectChange} data-testid="select-projs">

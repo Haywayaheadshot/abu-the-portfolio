@@ -17,7 +17,7 @@ function Service({ service, closeModal }) {
         </nav>
         <h1 className="body-font">{service.name}</h1>
         <p className="body-font">
-          Services with more than 1 year+ hands-on Experience in building
+          Services with more than 5 year+ hands-on Experience in building
           and designing innovative software solution
         </p>
         <section className="service-offer-sec">

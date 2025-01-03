@@ -28,9 +28,9 @@ const Contact = () => {
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
-      return true; // allow form submission
+      return true;
     }
-    return false; // prevent form submission
+    return false;
   };
 
   return (
@@ -68,10 +68,10 @@ const Contact = () => {
       <section className="contact-details-section">
         <h1 className="body-font">Talk To Me</h1>
         <div>
-          <a href="https://api.whatsapp.com/send?phone=+233233232585&text=Hello, I am looking to hire a developer!" target="_blank" rel="noreferrer">
+          <a href="https://api.whatsapp.com/send?phone=+233244041362&text=Hello, I am looking to hire a developer!" target="_blank" rel="noreferrer">
             <ImWhatsapp />
             <h3 className="body-font">Whatsapp:</h3>
-            <span className="body-font">+233233232585</span>
+            <span className="body-font">+233244041362</span>
           </a>
           <a href="mailto:ummarabubakar@outlook.com">
             <SiMinutemailer />
