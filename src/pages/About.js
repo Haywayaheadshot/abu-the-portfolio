@@ -7,52 +7,88 @@ import { IconContext } from 'react-icons';
 const About = () => (
   <div className="about-container" data-testid="about-container">
     <p className="about-container-par body-font" data-testid="about-container-par">
-      Hi there! My name is Abubakar Ummar, and I am a full-stack developer
-      with hands-on experience in JavaScript, React, Redux, Ruby, Ruby on Rails,
-      HTML5, CSS3, Bootstrap5, and Tailwind. I am passionate about building user-friendly
-      websites and creating responsive, accessible, and user-centric web applications.
-      <br />
-      <br />
-      Throughout my studies at Microverse, a globally acclaimed
-      software development school, I developed my skills and worked
-      remotely with developers from various time zones. As a result,
-      I am proficient in using Git, GitHub, Netlify, RSpec, TDD, Jest,
-      React Testing Library, and Chrome Dev Tool.
-      <br />
-      <br />
-      I am dedicated to challenging myself and adapting quickly to
-      new technologies, as evidenced by my successful career transition
-      from non-tech to tech. With remote pair-programming, teamwork, mentoring,
-      and cross-cultural communication experience, I am confident in my ability
-      to deliver quality work that meets your needs.
-      <br />
-      <br />
-      Here are my key skills and experience:
-      <br />
-      - Front-End: JavaScript, React, Redux, HTML5, CSS3, Bootstrap5, TypeScript, Tailwind.
-      <br />
-      - Back-End: Ruby, Ruby on Rails.
-      <br />
-      - Tools & Methods: Git, GitHub, Netlify, Mobile/Responsive Development,
-      RSpec, TDD, Jest, React Testing Library, Chrome Dev Tool.
-      <br />
-      <br />
-      If you&apos;re looking for a skilled developer, let&apos;s schedule a Zoom call.
-      Please feel free to email me at
+      Hi there! I’m
       {' '}
-      <a href="mailto:ummarabubakar@outlook.com">
+      <strong>Abubakar Ummar</strong>
+      , a
+      {' '}
+      <strong>Full-Stack Developer</strong>
+      {' '}
+      with
+      {' '}
+      <strong>
+        5+ years
+        of experience
+      </strong>
+      {' '}
+      in building user-friendly, responsive, and accessible web applications.
+      I specialize in
+      {' '}
+      <strong>JavaScript, React, Ruby, and Ruby on Rails</strong>
+      , and I’ve successfully deployed
+      <strong> 10+ projects</strong>
+      {' '}
+      that showcase my ability to deliver high-quality solutions.
+      <br />
+      <br />
+      I’m proficient in tools like
+      {' '}
+      <strong>Git, GitHub, Docker, Kubernetes, and RabbitMQ</strong>
+      ,
+      and I’m passionate about solving complex problems through clean, maintainable code.
+      <br />
+      <br />
+      Here’s a snapshot of my expertise:
+      <br />
+      -
+      {' '}
+      <strong>Front-End:</strong>
+      {' '}
+      JavaScript, React, Redux, TypeScript, HTML5, CSS3, Tailwind, Bootstrap5.
+      <br />
+      -
+      {' '}
+      <strong>Back-End:</strong>
+      {' '}
+      Ruby, Ruby on Rails, MySQL, PostgreSQL.
+      <br />
+      -
+      {' '}
+      <strong>Tools & Methods:</strong>
+      {' '}
+      Git, GitHub, Heroku, Netlify, RSpec, TDD, Jest, React Testing Library,
+      Chrome Dev Tools.
+      <br />
+      <br />
+      I’m dedicated to continuous learning and adapting to new technologies, as evidenced by
+      my successful transition from a non-tech background to a thriving career in tech.
+      With experience in
+      {' '}
+      <strong>remote teamwork</strong>
+      ,
+      {' '}
+      <strong>mentoring</strong>
+      , and
+      {' '}
+      <strong>cross-cultural communication</strong>
+      ,
+      I’m confident in my ability to contribute effectively to your team.
+      <br />
+      <br />
+      Let’s connect! Feel free to email me at
+      {' '}
+      <a href="mailto:ummarabubakar@outlook.com" target="_blank" rel="noreferrer">
         <span className="about-email body-font">
           ummarabubakar@outlook.com
         </span>
       </a>
+      {' '}
+      or check out my portfolio on GitHub
+      {' '}
+      <a href="https://www.github.com/Haywayaheadshot" target="_blank" rel="noreferrer">
+        <i><b className="about-email body-font">HERE</b></i>
+      </a>
       .
-      <br />
-      <br />
-      You can view my portfolio on Github
-      {' '}
-      <a href="https://www.github.com/Haywayaheadshot" target="_blank" rel="noreferrer"><i><b className="about-email body-font">HERE</b></i></a>
-      {' '}
-      to see more of my work.
     </p>
     <section className="about-icons-section">
       <IconContext.Provider value={{ size: '1.5em', className: 'global-class-name skill-icons' }}>
@@ -60,14 +96,14 @@ const About = () => (
           <TfiMedallAlt />
           <h3 className="body-font">Experience</h3>
           <p className="body-font">
-            1+ Year
+            5+ Years
           </p>
         </div>
         <div>
           <BiBriefcaseAlt />
           <h3 className="body-font">Completed</h3>
           <p className="body-font">
-            30+ Projects
+            10+ Projects
           </p>
         </div>
         <div>
@@ -80,7 +116,7 @@ const About = () => (
       </IconContext.Provider>
     </section>
     <section>
-      <a href="/Abubakar-Ummars-Resume-2.0.pdf" download="Abubakar Ummars' CV" className="download-cv body-font">
+      <a href="/Abubakar-Ummars-Resume-v9.pdf" download="Abubakar Ummars' CV" className="download-cv body-font">
         Download CV
       </a>
     </section>
